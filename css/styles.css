@@ -93,4 +93,36 @@ html,body{
     font-size: 2rem;
 }
 
+.abtConference{
+    position: relative;
+    color: white;
+    background: url('images\conference.jpg');
+    background-size: cover;
+    z-index: -2;
+    padding: 10%;
+}
+
+.abtConference .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color:rgba(197, 0, 0, 0.829);
+}
+.abtConference h1{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.abtConference .content{
+    padding-top: 5%;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+
+.dummy{
+    height: 1500px;
+}
 
