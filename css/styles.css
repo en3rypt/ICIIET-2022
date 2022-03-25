@@ -96,7 +96,7 @@ html,body{
 .abtConference{
     position: relative;
     color: white;
-    background: url('images\conference.jpg');
+    background: url('../images/conference.jpg');
     background-size: cover;
     z-index: -2;
     padding: 10%;
