@@ -42,8 +42,8 @@ html,body{
   }
 
 .sticky-div{  
-      /* transition: all;
-      transition-duration: 0.2s; */
+      transition: all;
+      transition-duration: 0.2s;
 }
 
 .glass{
