@@ -96,6 +96,30 @@ html,body{
     font-size: 2rem;
 }
 
+
+.abtConference{
+    position: relative;
+    color: white;
+    background: url('../images/conference.jpg');
+    background-size: cover;
+    z-index: -2;
+    padding: 10%;
+}
+
+.abtConference .overlay{
+    z-index: -1;
+    background-color:rgba(197, 0, 0, 0.829);
+}
+.abtConference h1{
+    font-size: 2.2rem;
+}
+
+.abtConference .content{
+    padding-top: 5%;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    text-align: justify;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -104,9 +128,8 @@ html,body{
 
 .sticky + .content {
   padding-top: 58px;
+
 }
-
-
 
 
 
