@@ -96,16 +96,30 @@ html,body{
     font-size: 2rem;
 }
 
-.position{
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 58px;
+  
+  }
+  
 
-    position:relative;
-    left:-10px;
+
+/* about section */
+.end-10{
+    right:10px;
+}
+.px-6{
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
 }
 
 .abtCollege-content{
-    height:650px;       
-    position: relative;
-    background-color: #082465;
+    height:100%;     
     z-index: 1;
     background: #082465;
     box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.25);
@@ -120,11 +134,7 @@ color: #F05858;
     text-align: justify;
     color: #E2E2E2;
 }
-.college-image{
-    height:650px;
-    margin: 0;
-    padding:0;
-}
+
 
 
 .abtConference{
@@ -149,16 +159,6 @@ color: #F05858;
     font-size: 1.2rem;
     line-height: 1.5em;
     text-align: justify;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 58px;
-
 }
 
 
