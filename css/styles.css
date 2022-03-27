@@ -112,6 +112,11 @@ body {
 .end-10 {
   right: 10px;
 }
+
+
+.start-10{
+    left:10px;
+}
 .px-6 {
   padding-right: 5rem !important;
   padding-left: 5rem !important;
@@ -155,6 +160,24 @@ body {
   text-align: justify;
 }
 
+.abtDepartment-content {
+  height: 100%;
+  z-index: 1;
+  background: #082465;
+  border-radius: 0.8rem;
+  margin: 0;
+}
+
+.abtDepartment-content p {
+  text-align: justify;
+  color: #e2e2e2;
+}
+
+.img-fluid1 {
+  max-width: 100%;
+  height:auto;
+}
+
 @media (min-width: 1400px) {
   .p-lg-5 {
     padding: 5rem !important;
@@ -165,6 +188,17 @@ body {
   .abtCollege-content {
     border-radius: 0;
   }
+  .abtDepartment-content{
+      border-radius:0;
+  }
+}
+
+@media (min-width: 990px)
+{
+    .department{
+        height:450px;
+        width:100%;
+    }
 }
 /* del */
 .dummy {
