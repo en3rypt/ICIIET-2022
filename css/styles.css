@@ -1,99 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap");
 
-*{
-    padding:0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html,body{
-    font-family:Arial, Helvetica, sans-serif;
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 /* under link effect    */
-.link-effect{
-    text-decoration: none;
-    color:white;
-    font-weight: 400;
-    font-size:1.25rem;
-    
+.link-effect {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
-.underline{
-    position: relative;
+.underline {
+  position: relative;
 }
-  
-.underline::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
-  
-  @media (hover: hover) and (pointer: fine) {
-    .underline:hover::before{
-      left: 0;
-      right: auto;
-      width: 100%;
-    }
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
   }
+}
+
 
 .sticky-div{  
       transition: all;
       transition-duration: 0.2s;
 }
 
-.glass{
-    background: rgba( 31, 38, 135, 1);
-        /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+.glass {
+  background: rgba(31, 38, 135, 1);
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px ); */
 }
 
-
 @media (max-width: 992px) {
-    .bg-color{
-        background-color: rgba( 31, 38, 135, 1 );
-    }
-    
+  .bg-color {
+    background-color: rgba(31, 38, 135, 1);
+  }
 }
 
 /* new css */
 
-.text-red{
-    color:rgba(240, 88, 88, 1);
+.text-red {
+  color: rgba(240, 88, 88, 1);
 }
 
-.text-yellow{
-    color:#FEC913;
+.text-yellow {
+  color: #fec913;
+}
+
+.pt-6 {
+  padding-top: 6rem !important;
 }
 .bg-primary-blue{
   background-color: rgba(8, 36, 101, 1) !important;
 }
 
-.pt-6{
-    padding-top:6rem !important;
+.header {
+  background-color: rgba(8, 36, 101, 1);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .header{
     background-color: rgba(8, 36, 101, 1) !important;
     padding-left: 2rem;
     padding-right:2rem;
+
+.ieee-logo {
+  width: 7.375rem;
 }
 
-.ieee-logo{
-    width: 7.375rem;
+.f-40 {
+  font-size: 1.5rem;
 }
 
-.f-40{
- font-size: 1.5rem;
+.f-30 {
+  font-size: 2rem;
 }
 
-.f-30{  
-    font-size: 2rem;
+nav {
+  background-color: rgba(8, 36, 101, 1);
+  height: 3.5rem;
+  margin-top: 0.04rem;
+  color: white;
+  text-align: center;
 }
 
 .sticky {
@@ -174,4 +185,28 @@ html,body{
 .dummy{
   width: 100%;
   height:100vh;
+.content {
+  background-image: url(../images/bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40em;
+  background-color: white;
+  border: 1px solid black;
+  padding-right: 7rem;
+}
+
+.latest-updates {
+  height: 30rem;
+  width: 28rem;
+  background-color: rgba(8, 36, 101, 1);
+  border-radius: 10px;
+  color: white;
+}
+
+.latest-updates h2 {
+  padding: 20px 0 0 20px;
+  color: #fec913;
 }
