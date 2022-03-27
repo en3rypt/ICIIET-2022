@@ -178,6 +178,15 @@ body {
   height:auto;
 }
 
+.read-more{
+    /* border:0; */
+    color:white;
+}
+.read-more:hover{
+    background-color:rgb(255, 255, 255);
+    color:rgb(247, 0, 0);
+}
+
 @media (min-width: 1400px) {
   .p-lg-5 {
     padding: 5rem !important;
