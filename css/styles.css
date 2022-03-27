@@ -172,27 +172,54 @@ body {
   height: 100vh;
 }
 .landing-content {
-  background-image: url(../images/landingPage1.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url(../images/landingPage1.jpeg) no-repeat center center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 40em;
   background-color: white;
-  border: 1px solid black;
-  padding-right: 7rem;
+  padding: 7rem;
+  width: 100%;
+  height: auto;
 }
 
 .latest-updates {
   height: 30rem;
   width: 28rem;
+  padding: 2rem;
+  padding-top: 0;
   background-color: rgba(8, 36, 101, 1);
   border-radius: 10px;
   color: white;
+  overflow: auto;
 }
 
+.latest-updates::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
 .latest-updates h2 {
-  padding: 20px 0 0 20px;
+  letter-spacing: 0.2rem;
   color: #fec913;
+  font-size: 1.75rem;
+  font-weight: 800;
+  padding: 2rem 1rem 1rem 0;
+  background-color: rgba(8, 36, 101, 1);
+}
+
+.date {
+  opacity: 0.6;
+  font-size: 0.75rem;
+  font-weight: thin;
+  font-style: italic;
+}
+
+.article-container {
+  padding-bottom: 2rem;
+}
+
+.news {
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
