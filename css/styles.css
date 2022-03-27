@@ -96,6 +96,43 @@ html,body{
     font-size: 2rem;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 58px;
+  
+  }
+  
+
+
+/* about section */
+.end-10{
+    right:10px;
+}
+.px-6{
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+}
+
+.abtCollege-content{
+    height:100%;     
+    z-index: 1;
+    background: #082465;
+    border-radius: 0.8rem;
+    margin:0;
+}
+
+.abtCollege-content p{
+    text-align: justify;
+    color: #E2E2E2;
+}
+
+
+
 
 .abtConference{
     position: relative;
@@ -110,6 +147,7 @@ html,body{
     z-index: -1;
     background-color:rgba(197, 0, 0, 0.829);
 }
+
 .abtConference h1{
     font-size: 2.2rem;
 }
@@ -120,19 +158,18 @@ html,body{
     line-height: 1.5em;
     text-align: justify;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+@media (min-width: 1400px) {
+    .p-lg-5{
+        padding: 5rem !important;
+    }
 }
 
-.sticky + .content {
-  padding-top: 58px;
-
+@media (max-width: 575px){
+    .abtCollege-content{ 
+        border-radius: 0;
+    }
 }
-
-
-
 /* del */
 .dummy{
   width: 100%;
