@@ -1,177 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap");
 
-*{
-    padding:0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html,body{
-    font-family:Arial, Helvetica, sans-serif;
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 /* under link effect    */
-.link-effect{
-    text-decoration: none;
-    color:white;
-    font-weight: 400;
-    font-size:1.25rem;
-    
+.link-effect {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
-.underline{
-    position: relative;
+.underline {
+  position: relative;
 }
-  
-.underline::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
-  
-  @media (hover: hover) and (pointer: fine) {
-    .underline:hover::before{
-      left: 0;
-      right: auto;
-      width: 100%;
-    }
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
   }
-
-.sticky-div{  
-      transition: all;
-      transition-duration: 0.2s;
 }
 
-.glass{
-    background: rgba( 31, 38, 135, 1);
-        /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+.sticky-div {
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.glass {
+  background: rgba(31, 38, 135, 1);
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px ); */
 }
 
-
 @media (max-width: 992px) {
-    .bg-color{
-        background-color: rgba( 31, 38, 135, 1 );
-    }
-    
+  .bg-color {
+    background-color: rgba(31, 38, 135, 1);
+  }
 }
 
 /* new css */
 
-.text-red{
-    color:rgba(240, 88, 88, 1);
+.text-red {
+  color: rgba(240, 88, 88, 1);
 }
 
-.text-yellow{
-    color:#FEC913;
+.text-yellow {
+  color: #fec913;
 }
-.bg-primary-blue{
+
+.pt-6 {
+  padding-top: 6rem !important;
+}
+.bg-primary-blue {
   background-color: rgba(8, 36, 101, 1) !important;
 }
 
-.pt-6{
-    padding-top:6rem !important;
+.header {
+  background-color: rgba(8, 36, 101, 1);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.header{
-    background-color: rgba(8, 36, 101, 1) !important;
-    padding-left: 2rem;
-    padding-right:2rem;
+.header {
+  background-color: rgba(8, 36, 101, 1) !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.ieee-logo {
+  width: 7.375rem;
 }
 
-.ieee-logo{
-    width: 7.375rem;
+.f-40 {
+  font-size: 1.5rem;
 }
 
-.f-40{
- font-size: 1.5rem;
-}
-
-.f-30{  
-    font-size: 2rem;
+.f-30 {
+  font-size: 2rem;
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 58px;
-  
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.sticky + .content {
+  padding-top: 58px;
+}
 
 /* about section */
-.end-10{
-    right:10px;
+.end-10 {
+  right: 10px;
 }
-.px-6{
-    padding-right: 5rem !important;
-    padding-left: 5rem !important;
-}
-
-.abtCollege-content{
-    height:100%;     
-    z-index: 1;
-    background: #082465;
-    border-radius: 0.8rem;
-    margin:0;
+.px-6 {
+  padding-right: 5rem !important;
+  padding-left: 5rem !important;
 }
 
-.abtCollege-content p{
-    text-align: justify;
-    color: #E2E2E2;
+.abtCollege-content {
+  height: 100%;
+  z-index: 1;
+  background: #082465;
+  border-radius: 0.8rem;
+  margin: 0;
 }
 
-
-
-
-.abtConference{
-    position: relative;
-    color: white;
-    background: url('../images/conference.jpg');
-    background-size: cover;
-    z-index: -2;
-    padding: 10%;
+.abtCollege-content p {
+  text-align: justify;
+  color: #e2e2e2;
 }
 
-.abtConference .overlay{
-    z-index: -1;
-    background-color:rgba(197, 0, 0, 0.829);
+.abtConference {
+  position: relative;
+  color: white;
+  background: url("../images/conference.jpg");
+  background-size: cover;
+  z-index: -2;
+  padding: 10%;
 }
 
-.abtConference h1{
-    font-size: 2.2rem;
+.abtConference .overlay {
+  z-index: -1;
+  background-color: rgba(197, 0, 0, 0.829);
 }
 
-.abtConference .content{
-    padding-top: 5%;
-    font-size: 1.2rem;
-    line-height: 1.5em;
-    text-align: justify;
+.abtConference h1 {
+  font-size: 2.2rem;
+}
+
+.abtConference .content {
+  padding-top: 5%;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  text-align: justify;
 }
 
 @media (min-width: 1400px) {
-    .p-lg-5{
-        padding: 5rem !important;
-    }
+  .p-lg-5 {
+    padding: 5rem !important;
+  }
 }
 
-@media (max-width: 575px){
-    .abtCollege-content{ 
-        border-radius: 0;
-    }
+@media (max-width: 575px) {
+  .abtCollege-content {
+    border-radius: 0;
+  }
 }
 /* del */
-.dummy{
+.dummy {
   width: 100%;
-  height:100vh;
+  height: 100vh;
+}
+.landing-content {
+  background: url(../images/landingPage1.jpeg) no-repeat center center;
+  background-size: cover;
+  background-color: white;
+  width: 100%;
+  height: 37rem;
+  position: relative;
+}
+.landing-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+.latest-updates {
+    z-index: 10;
+    position:absolute;
+    top:3.5rem;
+    right:3.5rem;
+  height: 30rem;
+  width: 28rem;
+  padding: 2rem;
+  padding-top: 0;
+  background-color: rgba(8, 36, 101, 1);
+  border-radius: 10px;
+  color: white;
+}
+
+
+.latest-updates h2 {
+  letter-spacing: 0.2rem;
+  color: #fec913;
+  font-size: 1.75rem;
+  font-weight: 800;
+  padding: 2rem 1rem 1rem 0;
+  background-color: rgba(8, 36, 101, 1);
+}
+
+.date {
+    opacity: 0.6;
+  font-size: 0.75rem;
+  font-weight: thin;
+  font-style: italic;
+}
+
+.empty-div{
+    min-height: 22rem;
+}
+
+.article-container {
+    padding-bottom: 2rem;
+    overflow-y: auto;
+    max-height: 22rem;
+    z-index: 1020;
+}
+
+.article-container::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+
+.news {
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
