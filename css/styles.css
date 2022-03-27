@@ -179,12 +179,19 @@ body {
 }
 
 .read-more{
-    /* border:0; */
+     border:1px solid ; 
+    color:white;
+    padding:5px 26px;
+    border-radius:5px;
+    text-decoration:none;
+}
+.read-more:link,.read-more:visited{
     color:white;
 }
 .read-more:hover{
-    background-color:rgb(255, 255, 255);
-    color:rgb(247, 0, 0);
+    background-color:rgba(230, 36, 36, 0.829);
+    color:rgb(247, 247, 247);
+    border-color:rgba(197, 0, 0, 0.829);
 }
 
 @media (min-width: 1400px) {
