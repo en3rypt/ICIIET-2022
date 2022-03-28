@@ -387,21 +387,28 @@ img
   height: 37rem;
   position: relative;
 }
-.landing-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.25);
-    z-index: 1;
+
+@media (max-width: 575px) {
+  .landing-content {
+    margin-top: 1px;
+  }
+}
+
+.landing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 .latest-updates {
-    z-index: 10;
-    position:absolute;
-    top:3.5rem;
-    right:3.5rem;
+  z-index: 10;
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
   height: 30rem;
   width: 28rem;
   padding: 2rem;
@@ -410,7 +417,6 @@ img
   border-radius: 10px;
   color: white;
 }
-
 
 .latest-updates h2 {
   letter-spacing: 0.2rem;
@@ -421,28 +427,64 @@ img
   background-color: rgba(8, 36, 101, 1);
 }
 
+@media (max-width: 768px) {
+  .landing-overlay {
+    display: none;
+  }
+  .latest-updates {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    height: 80%;
+  }
+
+  .latest-updates h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .landing-overlay {
+    display: none;
+  }
+  .latest-updates {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    height: 80%;
+  }
+
+  .latest-updates h2 {
+    text-align: center;
+  }
+}
+
 .date {
-    opacity: 0.6;
+  opacity: 0.6;
   font-size: 0.75rem;
   font-weight: thin;
   font-style: italic;
 }
 
-.empty-div{
-    min-height: 22rem;
+.empty-div {
+  min-height: 22rem;
 }
 
 .article-container {
-    padding-bottom: 2rem;
-    overflow-y: auto;
-    max-height: 22rem;
-    z-index: 1020;
+  padding-bottom: 2rem;
+  overflow-y: auto;
+  max-height: 22rem;
+  z-index: 1020;
 }
 
 .article-container::-webkit-scrollbar {
-    width: 0px; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
-  }
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
 
 .news {
   letter-spacing: 0.5px;
