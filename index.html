@@ -76,7 +76,7 @@
             <a class="underline link-effect nav-link  text-white" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="underline link-effect nav-link text-white" href="#">Committe</a>
+            <a class="underline link-effect nav-link text-white" href="#committe">Committe</a>
           </li>
           <li class="nav-item">
             <a class="underline link-effect nav-link text-white" href="#">Speakers</a>
@@ -102,11 +102,10 @@
 
   <!-- Landing/ #home -->
   <section class="landing-content" id="home">
-    <div class="landing-overlay"></div>
     <section class="latest-updates">
       <h2 class="fw-bold">LATEST UPDATES</h2>
       <div class="article-container" id="article-container">
-        <div class="empty-div"></div>
+        <!-- <div class="empty-div"></div> -->
         <article class="news">
           <div class="date">
             27 Mar '22
@@ -152,7 +151,7 @@
             perspiciatis rerum. Aliquam dolore esse modi.
           </p>
         </article>
-        <div class="empty-div"></div>
+        <!-- <div class="empty-div"></div> -->
       </div>
     </section>
   </section>
@@ -224,7 +223,7 @@
     </div>
   </div>
 
-  <div class="orgCommittee">
+  <div class="orgCommittee" id="committe">
     <h1>ORGANIZING COMMITTEE</h1>
     <div class="d-flex justify-content-center flex-wrap">
       <div class="name-card indiv">
@@ -358,7 +357,7 @@
     </section>
     <article class="regform-dwld">
       <p>
-        Click <a href="icc3_reg_form_2019.pdf" class="reg-dwld reg-underline reg-link-effect">here</a> to download the
+        Click <a href="#" class="reg-dwld reg-underline reg-link-effect">here</a> to download the
         registration form.
       </p>
     </article>
@@ -508,8 +507,9 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/index.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/infinite-scroll.pkgd.min.js"></script>
+  <script src="js/index.js"></script>
   <script>
     AOS.init();
   </script>

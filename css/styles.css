@@ -381,7 +381,7 @@ img {
   height: 100vh;
 }
 .landing-content {
-  background: url(../images/maskedBridge.svg) no-repeat center center;
+  background: url(../images/maskedBridge1.svg) no-repeat center center;
   background-size: cover;
   background-color: white;
   width: 100%;
@@ -411,7 +411,7 @@ img {
   z-index: 10;
   position: absolute;
   top: 3.5rem;
-  right: 15rem; /* modifier for the left-right positioning of the latest-updates div. */
+  right: 4%; /* modifier for the left-right positioning of the latest-updates div. */
   height: 30rem;
   width: 28rem;
   padding: 2rem;
