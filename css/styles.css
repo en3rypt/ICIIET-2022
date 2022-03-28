@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap");
 
+
 * {
   padding: 0;
   margin: 0;
@@ -112,6 +113,11 @@ body {
 .end-10 {
   right: 10px;
 }
+
+
+.start-10{
+    left:10px;
+}
 .px-6 {
   padding-right: 5rem !important;
   padding-left: 5rem !important;
@@ -120,10 +126,163 @@ body {
 .abtCollege-content {
   height: 100%;
   z-index: 1;
-  background: #082465;
+  background: -moz-linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
+  background: linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0666",endColorstr="#0056ff",GradientType=1);
   border-radius: 0.8rem;
   margin: 0;
 }
+
+/* FOOTER CSS */
+
+.foot
+{
+    font-family: 'Roboto', sans-serif;
+    margin-left: -1%;
+    margin-bottom: -2%;
+    width:auto;
+    background-color: #00002d;
+    color: white;
+}
+.foot-heading
+{
+    Margin-bottom:1cm; 
+    font-size: 24px;
+    text-align: center;
+    transform: translateY(25px)
+}
+.center
+{
+    text-align: center;
+}
+.left
+{
+    padding-left: 5.5rem;
+    float:left;
+}
+.right
+{
+    padding-right: 5.5rem;
+    float:right;
+    text-align: right;
+}
+.right1
+{
+    padding-right: 5.5rem;
+    float:right;
+}
+.left1
+{
+    padding-left: 5.5rem;
+    float:left;
+}
+.up
+{
+    float: center;
+    overflow: auto;
+    vertical-align: top;
+}
+.long-text
+{
+    font-size: 15px; 
+    color: rgba(234, 240, 246, 0.8);
+    font-weight: 400;
+}
+.long-text1
+{
+    font-size: 12px; 
+    color: rgba(234, 240, 246, 0.8);
+    font-weight: 400;
+}
+a
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(234, 240, 246, 0.8);
+}
+.a1
+{
+    font-weight: 400; 
+    padding-right: 35px;
+}
+.a2
+{
+    font-weight: 400; 
+    padding-left: 35px;
+}
+img
+{
+    vertical-align: baseline;
+}
+.space-maker
+{
+    height:3000px;
+}
+.big-font
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    font-weight: 600; 
+    line-height: 1;
+}
+.img-1
+{
+    transform: translateY(3px);
+}
+.bottom-foot
+{
+    padding-bottom: 20px; 
+    text-align:center;
+}
+.psg-text
+{
+    font-family:Baskervvile; 
+    font-size: 40px; 
+    line-height: 0.8;
+}
+@media only screen and (max-width: 420px)
+{
+    body            
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .long-text
+    {
+        line-height: 1;
+    }
+    .left
+    {
+        padding-left: 3.0rem;
+        float: left;
+        line-height: 1rem;
+        height: auto;
+    }
+    .right
+    {
+        padding-left: 3.0rem;
+        padding-right: 0rem;
+        float: left;
+        text-align: left;
+    }
+    .right1
+    {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        width:100%;
+        text-align: center;   
+    }
+    .left1
+    {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* FOOTER CSS END */
 
 .abtCollege-content p {
   text-align: justify;
@@ -138,6 +297,7 @@ body {
   z-index: -2;
   padding: 10%;
 }
+
 
 .abtConference .overlay {
   z-index: -1;
@@ -155,6 +315,43 @@ body {
   text-align: justify;
 }
 
+.abtDepartment-content {
+  height: 100%;
+  z-index: 1;
+  background: -moz-linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
+  background: linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0666",endColorstr="#0056ff",GradientType=1);
+  border-radius: 0.8rem;
+  margin: 0;
+}
+
+.abtDepartment-content p {
+  text-align: justify;
+  color: #e2e2e2;
+}
+
+.img-fluid1 {
+  max-width: 100%;
+  height:auto;
+}
+
+.read-more{
+     border:1px solid ; 
+    color:white;
+    padding:5px 26px;
+    border-radius:5px;
+    text-decoration:none;
+}
+.read-more:link,.read-more:visited{
+    color:white;
+}
+.read-more:hover{
+    background-color:rgba(230, 36, 36, 0.829);
+    color:rgb(247, 247, 247);
+    border-color:rgba(197, 0, 0, 0.829);
+}
+
 @media (min-width: 1400px) {
   .p-lg-5 {
     padding: 5rem !important;
@@ -165,6 +362,17 @@ body {
   .abtCollege-content {
     border-radius: 0;
   }
+  .abtDepartment-content{
+      border-radius:0;
+  }
+}
+
+@media (min-width: 990px)
+{
+    .department{
+        height:450px;
+        width:100%;
+    }
 }
 /* del */
 .dummy {
