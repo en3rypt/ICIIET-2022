@@ -310,6 +310,7 @@ img {
 .abtDepartment-content {
   height: 100%;
   z-index: 1;
+
   background: -moz-linear-gradient(
     90deg,
     rgba(11, 6, 102, 1) 0%,
@@ -538,8 +539,52 @@ img {
 
 .name-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
+  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288)
 }
+.advisory-chair{
+  padding: 45px;
+ background: -moz-linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
+  background: -webkit-linear-gradient(90deg,#0056ff  0%, #2525bd 44%, #0b0666 100%);
+  background: linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0666",endColorstr="#0056ff",GradientType=1);
+}
+
+.advisory-chair h1{
+  color: white;
+  text-align: center;
+}
+.advisory-data{
+  color:#000000;
+  z-index: 1;
+  background-color: #ffffff;
+  border-radius: 7px;
+  /* background: radial-gradient(circle at 0 0, transparent 13%, #ffffff calc(13%)) top left, radial-gradient(circle at 100% 0, transparent 13%, #ffffff calc(13%)) top right, radial-gradient(circle at 0 100%, transparent 13%, #ffffff calc(13%)) bottom left, radial-gradient(circle at 100% 100%, transparent 13%, #ffffff calc(13%)) bottom right; */
+  width: 500px;
+  height:150px;
+  background-repeat: no-repeat;
+  margin: 25px;
+  padding: 20px 40px;
+  transition:all 0.3s;
+}
+.advisory-data:hover{
+  transform: translateY(-3px);
+}
+
+
+.advisory-data span{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: red;
+}
+
+ 
+@media(max-width:600px){
+  .advisory-data{
+    height:auto;
+  }
+  
+} 
+
 
 .registration {
   background-color: rgba(8, 36, 101, 1);
@@ -803,4 +848,34 @@ border-radius: 8px;
   width: 250px;
 }
 
+
 /* track chairs
+
+
+/* Author Guide lines */
+.authorguideline
+{
+  position: relative;
+  color: white;
+  background: url("../images/conference.jpg");
+  background-size: cover;
+  z-index: -2;
+  padding: 10%;
+}
+.authorguideline .overlay{
+  z-index: -1;
+  background-color: rgba(69, 0, 197, 0.829);
+}
+
+.authorguideline h1{
+  font-size: 2.2rem;
+}
+.authorguideline .content {
+  padding-top: 5%;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+
+/* Authour Guide lines END */
+
