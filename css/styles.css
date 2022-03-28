@@ -710,6 +710,11 @@ img {
     padding: 0;
   }
 
+  .fee-amt:hover {
+    padding: 0;
+    font-weight: normal;
+  }
+
   .IEEE-member,
   .IEEE-nonmember {
     padding: 0;
