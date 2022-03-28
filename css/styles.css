@@ -567,3 +567,159 @@ img {
   transform: translateY(-3px);
   box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
 }
+
+.registration {
+  background-color: rgba(8, 36, 101, 1);
+  color: white;
+  padding: 3.5rem;
+}
+
+.registration h2 {
+  text-align: center;
+  color: #fec913;
+  font-weight: bold;
+}
+
+.point-container {
+  padding: 3.5rem;
+}
+
+.reg-point {
+  padding: 1rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.regform-dwld {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.regform-dwld p {
+  color: #fec913;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.reg-link-effect {
+  text-decoration: none;
+  font-style: italic;
+  color: #fec913;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.reg-underline {
+  position: relative;
+}
+
+.reg-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fec913;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .reg-underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.fee-structure {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.IEEE-member,
+.IEEE-nonmember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fee-head,
+.fee-cell {
+  width: 80%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 2rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
+}
+
+.fee-head {
+  font-weight: bold;
+  text-align: center;
+  background-color: #fec913;
+  color: rgba(8, 36, 101);
+  border-bottom: none;
+}
+
+.fee-cell {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fee-amt {
+  color: #fec913;
+  transition: all 0.5s ease-in-out;
+}
+
+.fee-amt:hover {
+  padding: 0 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fec913;
+  border-radius: 10px;
+  color: rgba(8, 36, 101, 1);
+}
+
+.reg-ps {
+  opacity: 0.8;
+}
+
+@media (max-width: 1080px) {
+  .registration {
+    padding: 1.725rem;
+  }
+  .fee-structure {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .point-container {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 625px) {
+  .registration h2 {
+    padding: 0;
+  }
+
+  .IEEE-member,
+  .IEEE-nonmember {
+    padding: 0;
+  }
+  .fee-head,
+  .fee-cell {
+    font-size: 1rem;
+  }
+  .reg-ps {
+    text-align: center;
+    padding: 1rem;
+  }
+}
