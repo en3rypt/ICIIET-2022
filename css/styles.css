@@ -318,9 +318,9 @@ img
 .abtDepartment-content {
   height: 100%;
   z-index: 1;
-  background: -moz-linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
-  background: linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
+  background: -moz-linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
+  background: -webkit-linear-gradient(90deg,#0056ff  0%, #2525bd 44%, #0b0666 100%);
+  background: linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0666",endColorstr="#0056ff",GradientType=1);
   border-radius: 0.8rem;
   margin: 0;
@@ -494,7 +494,7 @@ img
 
 .orgCommittee{
   border-radius: 5px;
-  margin: 45px auto;
+  margin: 45px auto 0;
   background-color: #f0f4ff;
   padding: 25px;
   text-align: center;
@@ -536,7 +536,7 @@ img
 .name-card span{
   font-size: 1.2rem;
   font-weight: 500;
-  color: black
+  color: black;
 }
 .name-card.categ p{
   width: 200px;
@@ -563,4 +563,43 @@ img
 .name-card:hover{
   transform: translateY(-3px);
   box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288)
+}
+.advisory-chair{
+  padding: 45px;
+ background: -moz-linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
+  background: -webkit-linear-gradient(90deg,#0056ff  0%, #2525bd 44%, #0b0666 100%);
+  background: linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0666",endColorstr="#0056ff",GradientType=1);
+}
+
+.advisory-chair h1{
+  color: white;
+  text-align: center;
+}
+.track{
+  color:#000000;
+  z-index: 1;
+  background: radial-gradient(circle at 0 0, transparent 10%, #ffffff calc(10%)) top left, radial-gradient(circle at 100% 0, transparent 10%, #ffffff calc(10%)) top right, radial-gradient(circle at 0 100%, transparent 10%, #ffffff calc(10%)) bottom left, radial-gradient(circle at 100% 100%, transparent 10%, #ffffff calc(10%)) bottom right;
+  width: 500px;
+  height:150px;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 25px;
+  padding: 20px 40px;
+  transition:all 0.3s;
+}
+.track:hover{
+  transform: translateY(-3px);
+}
+
+
+.track span{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: red;
+}
+@media(max-width:600px){
+  .track{
+    height:350px;
+  }
 }
