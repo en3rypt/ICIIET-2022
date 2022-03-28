@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap");
 
-
 * {
   padding: 0;
   margin: 0;
@@ -69,6 +68,10 @@ body {
   color: #fec913;
 }
 
+.text-blue {
+  color: #082465;
+}
+
 .pt-6 {
   padding-top: 6rem !important;
 }
@@ -114,9 +117,8 @@ body {
   right: 10px;
 }
 
-
-.start-10{
-    left:10px;
+.start-10 {
+  left: 10px;
 }
 .px-6 {
   padding-right: 5rem !important;
@@ -126,9 +128,24 @@ body {
 .abtCollege-content {
   height: 100%;
   z-index: 1;
-  background: -moz-linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
-  background: linear-gradient(90deg, rgba(11,6,102,1) 0%, rgba(37,37,189,1) 44%, rgba(0,86,255,1) 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(11, 6, 102, 1) 0%,
+    rgba(37, 37, 189, 1) 44%,
+    rgba(0, 86, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(11, 6, 102, 1) 0%,
+    rgba(37, 37, 189, 1) 44%,
+    rgba(0, 86, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(11, 6, 102, 1) 0%,
+    rgba(37, 37, 189, 1) 44%,
+    rgba(0, 86, 255, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0666",endColorstr="#0056ff",GradientType=1);
   border-radius: 0.8rem;
   margin: 0;
@@ -136,150 +153,126 @@ body {
 
 /* FOOTER CSS */
 
+
 .foot
 {
     font-family: 'Roboto', sans-serif;
     margin-left: -1%;
     margin-bottom: -2%;
     width:auto;
-    background-color: #00002d;
+    background-color: #082465;
     color: white;
 }
-.foot-heading
-{
-    Margin-bottom:1cm; 
-    font-size: 24px;
-    text-align: center;
-    transform: translateY(25px)
+.foot-heading {
+  margin-bottom: 1cm;
+  font-size: 24px;
+  text-align: center;
+  transform: translateY(25px);
 }
-.center
-{
-    text-align: center;
+.center {
+  text-align: center;
 }
-.left
-{
-    padding-left: 5.5rem;
-    float:left;
+.left {
+  padding-left: 5.5rem;
+  float: left;
 }
-.right
-{
-    padding-right: 5.5rem;
-    float:right;
-    text-align: right;
+.right {
+  padding-right: 5.5rem;
+  float: right;
+  text-align: right;
 }
-.right1
-{
-    padding-right: 5.5rem;
-    float:right;
+.right1 {
+  padding-right: 5.5rem;
+  float: right;
 }
-.left1
-{
-    padding-left: 5.5rem;
-    float:left;
+.left1 {
+  padding-left: 5.5rem;
+  float: left;
 }
-.up
-{
-    float: center;
-    overflow: auto;
-    vertical-align: top;
+.up {
+  float: center;
+  overflow: auto;
+  vertical-align: top;
 }
-.long-text
-{
-    font-size: 15px; 
-    color: rgba(234, 240, 246, 0.8);
-    font-weight: 400;
+.long-text {
+  font-size: 15px;
+  color: rgba(234, 240, 246, 0.8);
+  font-weight: 400;
 }
-.long-text1
-{
-    font-size: 12px; 
-    color: rgba(234, 240, 246, 0.8);
-    font-weight: 400;
+.long-text1 {
+  font-size: 12px;
+  color: rgba(234, 240, 246, 0.8);
+  font-weight: 400;
 }
-a
-{
-    text-decoration: none;
-    font-weight: 600;
-    color: rgba(234, 240, 246, 0.8);
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(234, 240, 246, 0.8);
 }
-.a1
-{
-    font-weight: 400; 
-    padding-right: 35px;
+.a1 {
+  font-weight: 400;
+  padding-right: 35px;
 }
-.a2
-{
-    font-weight: 400; 
-    padding-left: 35px;
+.a2 {
+  font-weight: 400;
+  padding-left: 35px;
 }
-img
-{
-    vertical-align: baseline;
+img {
+  vertical-align: baseline;
 }
-.space-maker
-{
-    height:3000px;
+.space-maker {
+  height: 3000px;
 }
-.big-font
-{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px; 
-    font-weight: 600; 
+.big-font {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+.img-1 {
+  transform: translateY(3px);
+}
+.bottom-foot {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.psg-text {
+  font-family: Baskervvile;
+  font-size: 40px;
+  line-height: 0.8;
+}
+@media only screen and (max-width: 420px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .long-text {
     line-height: 1;
-}
-.img-1
-{
-    transform: translateY(3px);
-}
-.bottom-foot
-{
-    padding-bottom: 20px; 
-    text-align:center;
-}
-.psg-text
-{
-    font-family:Baskervvile; 
-    font-size: 40px; 
-    line-height: 0.8;
-}
-@media only screen and (max-width: 420px)
-{
-    body            
-    {
-        margin: 0;
-        padding: 0;
-    }
-    .long-text
-    {
-        line-height: 1;
-    }
-    .left
-    {
-        padding-left: 3.0rem;
-        float: left;
-        line-height: 1rem;
-        height: auto;
-    }
-    .right
-    {
-        padding-left: 3.0rem;
-        padding-right: 0rem;
-        float: left;
-        text-align: left;
-    }
-    .right1
-    {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        width:100%;
-        text-align: center;   
-    }
-    .left1
-    {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        width: 100%;
-        text-align: center;
-    }
+  }
+  .left {
+    padding-left: 3rem;
+    float: left;
+    line-height: 1rem;
+    height: auto;
+  }
+  .right {
+    padding-left: 3rem;
+    padding-right: 0rem;
+    float: left;
+    text-align: left;
+  }
+  .right1 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100%;
+    text-align: center;
+  }
+  .left1 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* FOOTER CSS END */
@@ -297,7 +290,6 @@ img
   z-index: -2;
   padding: 10%;
 }
-
 
 .abtConference .overlay {
   z-index: -1;
@@ -318,9 +310,25 @@ img
 .abtDepartment-content {
   height: 100%;
   z-index: 1;
-  background: -moz-linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
-  background: -webkit-linear-gradient(90deg,#0056ff  0%, #2525bd 44%, #0b0666 100%);
-  background: linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
+
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(11, 6, 102, 1) 0%,
+    rgba(37, 37, 189, 1) 44%,
+    rgba(0, 86, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(11, 6, 102, 1) 0%,
+    rgba(37, 37, 189, 1) 44%,
+    rgba(0, 86, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(11, 6, 102, 1) 0%,
+    rgba(37, 37, 189, 1) 44%,
+    rgba(0, 86, 255, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0666",endColorstr="#0056ff",GradientType=1);
   border-radius: 0.8rem;
   margin: 0;
@@ -333,23 +341,24 @@ img
 
 .img-fluid1 {
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
-.read-more{
-     border:1px solid ; 
-    color:white;
-    padding:5px 26px;
-    border-radius:5px;
-    text-decoration:none;
+.read-more {
+  border: 1px solid;
+  color: white;
+  padding: 5px 26px;
+  border-radius: 5px;
+  text-decoration: none;
 }
-.read-more:link,.read-more:visited{
-    color:white;
+.read-more:link,
+.read-more:visited {
+  color: white;
 }
-.read-more:hover{
-    background-color:rgba(230, 36, 36, 0.829);
-    color:rgb(247, 247, 247);
-    border-color:rgba(197, 0, 0, 0.829);
+.read-more:hover {
+  background-color: rgba(230, 36, 36, 0.829);
+  color: rgb(247, 247, 247);
+  border-color: rgba(197, 0, 0, 0.829);
 }
 
 @media (min-width: 1400px) {
@@ -362,17 +371,16 @@ img
   .abtCollege-content {
     border-radius: 0;
   }
-  .abtDepartment-content{
-      border-radius:0;
+  .abtDepartment-content {
+    border-radius: 0;
   }
 }
 
-@media (min-width: 990px)
-{
-    .department{
-        height:450px;
-        width:100%;
-    }
+@media (min-width: 990px) {
+  .department {
+    height: 450px;
+    width: 100%;
+  }
 }
 /* del */
 .dummy {
@@ -380,7 +388,7 @@ img
   height: 100vh;
 }
 .landing-content {
-  background: url(../images/landingPage1.jpeg) no-repeat center center;
+  background: url(../images/maskedBridge1.svg) no-repeat center center;
   background-size: cover;
   background-color: white;
   width: 100%;
@@ -390,11 +398,13 @@ img
 
 @media (max-width: 575px) {
   .landing-content {
+    /* background: url(../images/landingPage1.jpeg); */
     margin-top: 1px;
   }
 }
 
 .landing-overlay {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -408,7 +418,7 @@ img
   z-index: 10;
   position: absolute;
   top: 3.5rem;
-  right: 3.5rem;
+  right: 4%; /* modifier for the left-right positioning of the latest-updates div. */
   height: 30rem;
   width: 28rem;
   padding: 2rem;
@@ -492,7 +502,7 @@ img
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 
-.orgCommittee{
+.orgCommittee {
   border-radius: 5px;
   margin: 45px auto 0;
   background-color: #f0f4ff;
@@ -500,12 +510,14 @@ img
   text-align: center;
 }
 
-.orgCommittee h1{
+
+.orgCommittee h1 {
   font-size: 2.2rem;
   color: #082465;
   font-weight: bolder;
   padding: 34px;
 }
+
 
 .name-card{
   border-radius: 10px;
@@ -514,53 +526,53 @@ img
   padding: 20px 20px;
   margin: 25px 25px;
   color: grey;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.name-card.indiv{
+.name-card.indiv {
   width: 400px;
 }
-.name-card.categ{
+.name-card.categ {
   width: 1200px;
 }
 
-.name-card h2{
-  margin: 10px 0;
+
+.name-card h4{
   display: inline-block;
   position: relative;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #082465;
+  font-size: 1.2em;
 }
-.name-card span{
+.name-card span {
   font-size: 1.2rem;
   font-weight: 500;
   color: black;
 }
-.name-card.categ p{
+.name-card.categ p {
   width: 200px;
   margin: 10px 5px 20px 5px;
 }
 
-.name-card h2::before{
+
+.name-card h4::before{
   position: absolute;
-  content:"";
+  content: "";
   background-color: #f05858;
   height: 2px;
   width: 100%;
   bottom: -3px;
-  left:0;
+  left: 0;
   transform: scaleX(0);
   visibility: hidden;
-  transition: all .3s ease-in-out 0s;
+
+  transition: all .2s ease-in-out 0s;
 }
-.name-card:hover.name-card h2:before{
+.name-card:hover.name-card h4:before{
   transform: scaleX(1);
   visibility: visible;
 }
 
-.name-card:hover{
+
+.name-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288)
 }
@@ -607,3 +619,218 @@ img
   }
   
 } 
+
+
+.registration {
+  background-color: rgba(8, 36, 101, 1);
+  color: white;
+  padding: 3.5rem;
+}
+
+.registration h2 {
+  text-align: center;
+  color: #fec913;
+  font-weight: bold;
+}
+
+.point-container {
+  padding: 3.5rem;
+}
+
+.reg-point {
+  padding: 1rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.regform-dwld {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.regform-dwld p {
+  color: #fec913;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.reg-link-effect {
+  text-decoration: none;
+  font-style: italic;
+  color: #fec913;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.reg-underline {
+  position: relative;
+}
+
+.reg-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fec913;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .reg-underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.fee-structure {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.IEEE-member,
+.IEEE-nonmember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fee-head,
+.fee-cell {
+  width: 80%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 2rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
+}
+
+.fee-head {
+  font-weight: bold;
+  text-align: center;
+  background-color: #fec913;
+  color: rgba(8, 36, 101);
+  border-bottom: none;
+}
+
+.fee-cell {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fee-amt {
+  color: #fec913;
+  transition: all 0.5s ease-in-out;
+}
+
+.fee-amt:hover {
+  padding: 0 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fec913;
+  border-radius: 10px;
+  color: rgba(8, 36, 101, 1);
+}
+
+.reg-ps {
+  opacity: 0.8;
+}
+
+@media (max-width: 1080px) {
+  .registration {
+    padding: 1.725rem;
+  }
+  .fee-structure {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .point-container {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 625px) {
+  .registration h2 {
+    padding: 0;
+  }
+
+  .fee-amt:hover {
+    padding: 0;
+    font-weight: normal;
+    background-color: inherit;
+    color: inherit;
+    border-radius: 0;
+  }
+
+  .IEEE-member,
+  .IEEE-nonmember {
+    padding: 0;
+  }
+  .fee-head,
+  .fee-cell {
+    font-size: 1rem;
+  }
+  .reg-ps {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+.name-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288)
+}
+
+
+/* keynote speakers start */
+
+.speaker{
+  background-color: #f05858;
+  color: white;
+  padding: 10px 0 20px;
+}
+
+.speaker h3{
+  color: white;
+  margin: 3em 0 1.5em 0;
+}
+.speakers-flexbox{
+  padding: 40px 0 20px;
+}
+
+.speaker .card{
+  background-color: #d33a3a;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 3em 20px;
+}
+
+.speaker .card h4{
+  font-size: 1.1em;
+}
+
+.speaker .card img{
+  width: 150px;
+  border-radius: 50%;
+  margin: -5em auto auto auto;
+  border: 10px solid #d33a3a;
+}
+
+.speaker .card .subtle{
+  color: rgba(255, 255, 255, 0.726);
+}
+
+/* keynote speakers end */
+
+
