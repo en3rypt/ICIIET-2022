@@ -68,6 +68,10 @@ body {
   color: #fec913;
 }
 
+.text-blue {
+  color: #082465;
+}
+
 .pt-6 {
   padding-top: 6rem !important;
 }
@@ -250,13 +254,6 @@ body {
   text-align: center;
 }
 
-.orgCommittee h1{
-  font-size: 2.2rem;
-  color: #082465;
-  font-weight: bolder;
-  padding: 34px;
-}
-
 .name-card{
   border-radius: 10px;
   text-align: center;
@@ -274,14 +271,10 @@ body {
   width: 1200px;
 }
 
-.name-card h2{
-  margin: 10px 0;
+.name-card h4{
   display: inline-block;
   position: relative;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #082465;
+  font-size: 1.2em;
 }
 .name-card span{
   font-size: 1.2rem;
@@ -293,7 +286,7 @@ body {
   margin: 10px 5px 20px 5px;
 }
 
-.name-card h2::before{
+.name-card h4::before{
   position: absolute;
   content:"";
   background-color: #f05858;
@@ -303,14 +296,14 @@ body {
   left:0;
   transform: scaleX(0);
   visibility: hidden;
-  transition: all .3s ease-in-out 0s;
+  transition: all .2s ease-in-out 0s;
 }
-.name-card:hover.name-card h2:before{
+.name-card:hover.name-card h4:before{
   transform: scaleX(1);
   visibility: visible;
 }
 
 .name-card:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288)
+  transform: translateY(-4px);
+  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288)
 }
