@@ -580,6 +580,7 @@ img
   color:#000000;
   z-index: 1;
   background-color: #ffffff;
+  border-radius: 7px;
   /* background: radial-gradient(circle at 0 0, transparent 13%, #ffffff calc(13%)) top left, radial-gradient(circle at 100% 0, transparent 13%, #ffffff calc(13%)) top right, radial-gradient(circle at 0 100%, transparent 13%, #ffffff calc(13%)) bottom left, radial-gradient(circle at 100% 100%, transparent 13%, #ffffff calc(13%)) bottom right; */
   width: 500px;
   height:150px;
