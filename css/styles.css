@@ -68,6 +68,10 @@ body {
   color: #fec913;
 }
 
+.text-blue {
+  color: #082465;
+}
+
 .pt-6 {
   padding-top: 6rem !important;
 }
@@ -149,13 +153,15 @@ body {
 
 /* FOOTER CSS */
 
-.foot {
-  font-family: "Roboto", sans-serif;
-  margin-left: -1%;
-  margin-bottom: -2%;
-  width: auto;
-  background-color: #00002d;
-  color: white;
+
+.foot
+{
+    font-family: 'Roboto', sans-serif;
+    margin-left: -1%;
+    margin-bottom: -2%;
+    width:auto;
+    background-color: #082465;
+    color: white;
 }
 .foot-heading {
   margin-bottom: 1cm;
@@ -503,6 +509,7 @@ img {
   text-align: center;
 }
 
+
 .orgCommittee h1 {
   font-size: 2.2rem;
   color: #082465;
@@ -510,7 +517,8 @@ img {
   padding: 34px;
 }
 
-.name-card {
+
+.name-card{
   border-radius: 10px;
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -527,14 +535,11 @@ img {
   width: 1200px;
 }
 
-.name-card h2 {
-  margin: 10px 0;
+
+.name-card h4{
   display: inline-block;
   position: relative;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #082465;
+  font-size: 1.2em;
 }
 .name-card span {
   font-size: 1.2rem;
@@ -546,7 +551,8 @@ img {
   margin: 10px 5px 20px 5px;
 }
 
-.name-card h2::before {
+
+.name-card h4::before{
   position: absolute;
   content: "";
   background-color: #f05858;
@@ -556,12 +562,14 @@ img {
   left: 0;
   transform: scaleX(0);
   visibility: hidden;
-  transition: all 0.3s ease-in-out 0s;
+
+  transition: all .2s ease-in-out 0s;
 }
-.name-card:hover.name-card h2:before {
+.name-card:hover.name-card h4:before{
   transform: scaleX(1);
   visibility: visible;
 }
+
 
 .name-card:hover {
   transform: translateY(-3px);
@@ -713,6 +721,9 @@ img {
   .fee-amt:hover {
     padding: 0;
     font-weight: normal;
+    background-color: inherit;
+    color: inherit;
+    border-radius: 0;
   }
 
   .IEEE-member,
@@ -728,3 +739,53 @@ img {
     padding: 1rem;
   }
 }
+
+.name-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288)
+}
+
+
+/* keynote speakers start */
+
+.speaker{
+  background-color: #f05858;
+  color: white;
+  padding: 10px 0 20px;
+}
+
+.speaker h3{
+  color: white;
+  margin: 3em 0 1.5em 0;
+}
+.speakers-flexbox{
+  padding: 40px 0 20px;
+}
+
+.speaker .card{
+  background-color: #d33a3a;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 3em 20px;
+}
+
+.speaker .card h4{
+  font-size: 1.1em;
+}
+
+.speaker .card img{
+  width: 150px;
+  border-radius: 50%;
+  margin: -5em auto auto auto;
+  border: 10px solid #d33a3a;
+}
+
+.speaker .card .subtle{
+  color: rgba(255, 255, 255, 0.726);
+}
+
+/* keynote speakers end */
+
+
