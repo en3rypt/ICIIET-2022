@@ -180,6 +180,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 575px) {
+  .landing-content {
+    margin-top: 1px;
+  }
+}
+
 .landing-overlay {
   position: absolute;
   top: 0;
@@ -218,6 +224,25 @@ body {
     display: none;
   }
   .latest-updates {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    height: 80%;
+  }
+
+  .latest-updates h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .landing-overlay {
+    display: none;
+  }
+  .latest-updates {
+    position: static;
     width: 100%;
     top: 0;
     right: 0;
