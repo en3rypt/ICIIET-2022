@@ -62,7 +62,7 @@ body {
 /* new css */
 
 .text-red {
-  color: rgba(240, 88, 88, 1);
+  color: #f05858;
 }
 
 .text-yellow {
@@ -387,21 +387,28 @@ img
   height: 37rem;
   position: relative;
 }
-.landing-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.25);
-    z-index: 1;
+
+@media (max-width: 575px) {
+  .landing-content {
+    margin-top: 1px;
+  }
+}
+
+.landing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 .latest-updates {
-    z-index: 10;
-    position:absolute;
-    top:3.5rem;
-    right:3.5rem;
+  z-index: 10;
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
   height: 30rem;
   width: 28rem;
   padding: 2rem;
@@ -410,7 +417,6 @@ img
   border-radius: 10px;
   color: white;
 }
-
 
 .latest-updates h2 {
   letter-spacing: 0.2rem;
@@ -421,31 +427,140 @@ img
   background-color: rgba(8, 36, 101, 1);
 }
 
+@media (max-width: 768px) {
+  .landing-overlay {
+    display: none;
+  }
+  .latest-updates {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    height: 80%;
+  }
+
+  .latest-updates h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .landing-overlay {
+    display: none;
+  }
+  .latest-updates {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    height: 80%;
+  }
+
+  .latest-updates h2 {
+    text-align: center;
+  }
+}
+
 .date {
-    opacity: 0.6;
+  opacity: 0.6;
   font-size: 0.75rem;
   font-weight: thin;
   font-style: italic;
 }
 
-.empty-div{
-    min-height: 22rem;
+.empty-div {
+  min-height: 22rem;
 }
 
 .article-container {
-    padding-bottom: 2rem;
-    overflow-y: auto;
-    max-height: 22rem;
-    z-index: 1020;
+  padding-bottom: 2rem;
+  overflow-y: auto;
+  max-height: 22rem;
+  z-index: 1020;
 }
 
 .article-container::-webkit-scrollbar {
-    width: 0px; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
-  }
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
 
 .news {
   letter-spacing: 0.5px;
   padding: 0.5rem 0;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.orgCommittee{
+  border-radius: 5px;
+  margin: 45px auto;
+  background-color: #f0f4ff;
+  padding: 25px;
+  text-align: center;
+}
+
+.orgCommittee h1{
+  font-size: 2.2rem;
+  color: #082465;
+  font-weight: bolder;
+  padding: 34px;
+}
+
+.name-card{
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 20px;
+  margin: 25px 25px;
+  color: grey;
+  transition: all .3s;
+}
+
+.name-card.indiv{
+  width: 400px;
+}
+.name-card.categ{
+  width: 1200px;
+}
+
+.name-card h2{
+  margin: 10px 0;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #082465;
+}
+.name-card span{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black
+}
+.name-card.categ p{
+  width: 200px;
+  margin: 10px 5px 20px 5px;
+}
+
+.name-card h2::before{
+  position: absolute;
+  content:"";
+  background-color: #f05858;
+  height: 2px;
+  width: 100%;
+  bottom: -3px;
+  left:0;
+  transform: scaleX(0);
+  visibility: hidden;
+  transition: all .3s ease-in-out 0s;
+}
+.name-card:hover.name-card h2:before{
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.name-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288)
 }
