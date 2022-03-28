@@ -427,6 +427,7 @@ img {
   color: white;
 }
 
+
 .latest-updates h2 {
   letter-spacing: 0.2rem;
   color: #fec913;
@@ -436,64 +437,28 @@ img {
   background-color: rgba(8, 36, 101, 1);
 }
 
-@media (max-width: 768px) {
-  .landing-overlay {
-    display: none;
-  }
-  .latest-updates {
-    position: absolute;
-    width: 80%;
-    top: 10%;
-    right: 10%;
-    bottom: 10%;
-    height: 80%;
-  }
-
-  .latest-updates h2 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 575px) {
-  .landing-overlay {
-    display: none;
-  }
-  .latest-updates {
-    position: absolute;
-    width: 80%;
-    top: 10%;
-    right: 10%;
-    bottom: 10%;
-    height: 80%;
-  }
-
-  .latest-updates h2 {
-    text-align: center;
-  }
-}
-
 .date {
-  opacity: 0.6;
+    opacity: 0.6;
   font-size: 0.75rem;
   font-weight: thin;
   font-style: italic;
 }
 
-.empty-div {
-  min-height: 22rem;
+.empty-div{
+    min-height: 22rem;
 }
 
 .article-container {
-  padding-bottom: 2rem;
-  overflow-y: auto;
-  max-height: 22rem;
-  z-index: 1020;
+    padding-bottom: 2rem;
+    overflow-y: auto;
+    max-height: 22rem;
+    z-index: 1020;
 }
 
 .article-container::-webkit-scrollbar {
-  width: 0px; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
 
 .news {
   letter-spacing: 0.5px;
@@ -742,7 +707,7 @@ img {
 
 .name-card:hover{
   transform: translateY(-4px);
-  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288)
+  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288);
 }
 
 
