@@ -834,3 +834,30 @@ img {
 /* keynote speakers end */
 
 
+
+/* Author Guide lines */
+.authorguideline
+{
+  position: relative;
+  color: white;
+  background: url("../images/conference.jpg");
+  background-size: cover;
+  z-index: -2;
+  padding: 10%;
+}
+.authorguideline .overlay{
+  z-index: -1;
+  background-color: rgba(69, 0, 197, 0.829);
+}
+
+.authorguideline h1{
+  font-size: 2.2rem;
+}
+.authorguideline .content {
+  padding-top: 5%;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+
+/* Authour Guide lines END */
