@@ -576,7 +576,7 @@ img
   color: white;
   text-align: center;
 }
-.track{
+.advisory-data{
   color:#000000;
   z-index: 1;
   background: radial-gradient(circle at 0 0, transparent 10%, #ffffff calc(10%)) top left, radial-gradient(circle at 100% 0, transparent 10%, #ffffff calc(10%)) top right, radial-gradient(circle at 0 100%, transparent 10%, #ffffff calc(10%)) bottom left, radial-gradient(circle at 100% 100%, transparent 10%, #ffffff calc(10%)) bottom right;
@@ -588,18 +588,18 @@ img
   padding: 20px 40px;
   transition:all 0.3s;
 }
-.track:hover{
+.advisory-data:hover{
   transform: translateY(-3px);
 }
 
 
-.track span{
+.advisory-data span{
   font-weight: bold;
   font-size: 1.2rem;
   color: red;
 }
 @media(max-width:600px){
-  .track{
+  .advisory-data{
     height:350px;
   }
 }
