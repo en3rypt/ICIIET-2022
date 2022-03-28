@@ -428,6 +428,7 @@ img {
   color: white;
 }
 
+
 .latest-updates h2 {
   letter-spacing: 0.2rem;
   color: #fec913;
@@ -437,64 +438,28 @@ img {
   background-color: rgba(8, 36, 101, 1);
 }
 
-@media (max-width: 768px) {
-  .landing-overlay {
-    display: none;
-  }
-  .latest-updates {
-    position: absolute;
-    width: 80%;
-    top: 10%;
-    right: 10%;
-    bottom: 10%;
-    height: 80%;
-  }
-
-  .latest-updates h2 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 575px) {
-  .landing-overlay {
-    display: none;
-  }
-  .latest-updates {
-    position: absolute;
-    width: 80%;
-    top: 10%;
-    right: 10%;
-    bottom: 10%;
-    height: 80%;
-  }
-
-  .latest-updates h2 {
-    text-align: center;
-  }
-}
-
 .date {
-  opacity: 0.6;
+    opacity: 0.6;
   font-size: 0.75rem;
   font-weight: thin;
   font-style: italic;
 }
 
-.empty-div {
-  min-height: 22rem;
+.empty-div{
+    min-height: 22rem;
 }
 
 .article-container {
-  padding-bottom: 2rem;
-  overflow-y: auto;
-  max-height: 22rem;
-  z-index: 1020;
+    padding-bottom: 2rem;
+    overflow-y: auto;
+    max-height: 22rem;
+    z-index: 1020;
 }
 
 .article-container::-webkit-scrollbar {
-  width: 0px; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
 
 .news {
   letter-spacing: 0.5px;
@@ -504,9 +469,9 @@ img {
 
 .orgCommittee {
   border-radius: 5px;
-  margin: 45px auto 0;
-  background-color: #f0f4ff;
-  padding: 25px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 45px;
   text-align: center;
 }
 
@@ -787,7 +752,7 @@ img {
 
 .name-card:hover{
   transform: translateY(-4px);
-  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288)
+  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288);
 }
 
 
@@ -833,6 +798,58 @@ img {
 
 /* keynote speakers end */
 
+/* track chairs begin */
+.track-chairs{
+  background-color: #f7f7f7;
+}
+
+.track-chairs .card{
+  width: 400px;
+  margin: 2em;
+  background-color: #f7f7f7;
+  border: none;
+}
+
+
+
+.track-chairs .card .heading{
+  background: rgb(241,38,38);
+background: -moz-linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
+background: -webkit-linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
+background: linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f12626",endColorstr="#76005c",GradientType=1);
+color: white;
+padding: 1em;
+border-radius: 8px;
+}
+.track-chairs .card .heading p{
+  margin: 0;
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 0.8rem;
+}
+.track-chairs .card .heading h4{
+  font-size: 1.2rem;
+}
+.track-chairs .card .chairs{
+  padding: 1em;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: -1em;
+  z-index: 99;
+}
+
+.track-chairs .card .chairs:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+}
+
+.virtual-platform p{
+  width: 250px;
+}
+
+
+/* track chairs
 
 
 /* Author Guide lines */
@@ -861,6 +878,7 @@ img {
 
 
 /* Authour Guide lines END */
+
 
 /* Important Date Start */
 
@@ -1033,3 +1051,4 @@ h1 {
   z-index: 2000;
 } */
 /* Important Date END */
+
