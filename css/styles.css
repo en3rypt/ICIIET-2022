@@ -713,6 +713,9 @@ img {
   .fee-amt:hover {
     padding: 0;
     font-weight: normal;
+    background-color: inherit;
+    color: inherit;
+    border-radius: 0;
   }
 
   .IEEE-member,
