@@ -275,6 +275,7 @@ img {
 
 /* FOOTER CSS END */
 
+
 .abtCollege-content p {
   text-align: justify;
   color: #e2e2e2;
@@ -308,6 +309,7 @@ img {
 .abtDepartment-content {
   height: 100%;
   z-index: 1;
+
   background: -moz-linear-gradient(
     90deg,
     rgba(11, 6, 102, 1) 0%,
@@ -384,6 +386,8 @@ img {
   width: 100%;
   height: 100vh;
 }
+
+
 .landing-content {
   background: url(../images/maskedBridge1.svg) no-repeat center center;
   background-size: cover;
@@ -411,6 +415,7 @@ img {
   z-index: 1;
 }
 
+
 .latest-updates {
   z-index: 10;
   position: absolute;
@@ -425,6 +430,7 @@ img {
   color: white;
 }
 
+
 .latest-updates h2 {
   letter-spacing: 0.2rem;
   color: #fec913;
@@ -434,64 +440,30 @@ img {
   background-color: rgba(8, 36, 101, 1);
 }
 
-@media (max-width: 768px) {
-  .landing-overlay {
-    display: none;
-  }
-  .latest-updates {
-    position: absolute;
-    width: 80%;
-    top: 10%;
-    right: 10%;
-    bottom: 10%;
-    height: 80%;
-  }
-
-  .latest-updates h2 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 575px) {
-  .landing-overlay {
-    display: none;
-  }
-  .latest-updates {
-    position: absolute;
-    width: 80%;
-    top: 10%;
-    right: 10%;
-    bottom: 10%;
-    height: 80%;
-  }
-
-  .latest-updates h2 {
-    text-align: center;
-  }
-}
-
-.date {
-  opacity: 0.6;
+.article-date {
+    opacity: 0.6;
   font-size: 0.75rem;
   font-weight: thin;
   font-style: italic;
 }
 
-.empty-div {
-  min-height: 22rem;
+.empty-div{
+    min-height: 22rem;
 }
 
 .article-container {
+
   padding-bottom: 1rem;
   overflow-y: auto;
   max-height: 18rem;
   z-index: 1020;
+
 }
 
 .article-container::-webkit-scrollbar {
-  width: 0px; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
 
 .news {
   font-size: 0.8rem;
@@ -500,11 +472,12 @@ img {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 
+
 .orgCommittee {
   border-radius: 5px;
-  margin: 45px auto;
-  background-color: #f0f4ff;
-  padding: 25px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 45px;
   text-align: center;
 }
 
@@ -567,8 +540,52 @@ img {
 
 .name-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
+  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288)
 }
+.advisory-chair{
+  padding: 45px;
+ background: -moz-linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
+  background: -webkit-linear-gradient(90deg,#0056ff  0%, #2525bd 44%, #0b0666 100%);
+  background: linear-gradient(90deg, #0056ff 0%, #2525bd 44%, #0b0666 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0666",endColorstr="#0056ff",GradientType=1);
+}
+
+.advisory-chair h1{
+  color: white;
+  text-align: center;
+}
+.advisory-data{
+  color:#000000;
+  z-index: 1;
+  background-color: #ffffff;
+  border-radius: 7px;
+  /* background: radial-gradient(circle at 0 0, transparent 13%, #ffffff calc(13%)) top left, radial-gradient(circle at 100% 0, transparent 13%, #ffffff calc(13%)) top right, radial-gradient(circle at 0 100%, transparent 13%, #ffffff calc(13%)) bottom left, radial-gradient(circle at 100% 100%, transparent 13%, #ffffff calc(13%)) bottom right; */
+  width: 500px;
+  height:150px;
+  background-repeat: no-repeat;
+  margin: 25px;
+  padding: 20px 40px;
+  transition:all 0.3s;
+}
+.advisory-data:hover{
+  transform: translateY(-3px);
+}
+
+
+.advisory-data span{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: red;
+}
+
+ 
+@media(max-width:600px){
+  .advisory-data{
+    height:auto;
+  }
+  
+} 
+
 
 .registration {
   background-color: rgba(8, 36, 101, 1);
@@ -781,3 +798,254 @@ img {
 }
 
 /* keynote speakers end */
+
+
+/* track chairs begin */
+.track-chairs{
+  background-color: #f7f7f7;
+}
+
+.track-chairs .card{
+  width: 400px;
+  margin: 2em;
+  background-color: #f7f7f7;
+  border: none;
+}
+
+
+
+.track-chairs .card .heading{
+  background: rgb(241,38,38);
+background: -moz-linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
+background: -webkit-linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
+background: linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f12626",endColorstr="#76005c",GradientType=1);
+color: white;
+padding: 1em;
+border-radius: 8px;
+}
+.track-chairs .card .heading p{
+  margin: 0;
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 0.8rem;
+}
+.track-chairs .card .heading h4{
+  font-size: 1.2rem;
+}
+.track-chairs .card .chairs{
+  padding: 1em;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: -1em;
+  z-index: 99;
+}
+
+.track-chairs .card .chairs:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+}
+
+.virtual-platform p{
+  width: 250px;
+}
+
+
+/* track chairs
+
+
+/* Author Guide lines */
+.authorguideline
+{
+  position: relative;
+  color: white;
+  background: url("../images/conference.jpg");
+  background-size: cover;
+  z-index: -2;
+  padding: 10%;
+}
+.authorguideline .overlay{
+  z-index: -1;
+  background-color: rgba(69, 0, 197, 0.829);
+}
+
+.authorguideline h1{
+  font-size: 2.2rem;
+}
+.authorguideline .content {
+  padding-top: 5%;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+
+/* Authour Guide lines END */
+
+
+/* Important Date Start */
+.important-dates{
+  padding:6rem 0;
+}
+.ulist {
+  display: grid;
+  grid-template-columns: 0.25rem 1fr;
+  grid-auto-columns: max-content;
+  column-gap: 2rem;
+  list-style: none;
+  width: min(60rem, 90%);
+  margin-inline: auto;
+}
+
+.ulist::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(0.25rem / 2);
+}
+
+
+.ulist li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+
+.ulist li {
+  grid-column: 2;
+  margin-inline: 1.5rem;
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+
+.ulist li .date {
+  height: 3rem;
+  margin-inline: calc(1.5rem * -1);
+
+  text-align: center;
+  background-color: var(--accent-color);
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  border-radius: calc(3rem / 2) 0 0 calc(3rem / 2);
+}
+
+
+.ulist li .date::before {
+  content: "";
+  width: 1.5rem;
+  aspect-ratio: 1;
+  background: var(--accent-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+}
+
+.ulist li .date::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  background: rgba(245, 245, 245);
+  border: 0.3rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+  right: calc(100% + 2rem + 0.25rem / 2);
+}
+
+.ulist li .title,
+.ulist li .descr {
+  background: rgba(245, 245, 245);
+  position: relative;
+  padding-inline: 1.5rem;
+}
+.ulist li .title {
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-weight: 500;
+}
+.ulist li .descr {
+  padding-top:5%;
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+
+.ulist li .title::before,
+.ulist li .descr::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(4px);
+  transform: translate(-50%, 50%);
+}
+.ulist li .title::before {
+  bottom: calc(100% + 0.125rem);
+}
+
+.ulist li .descr::before {
+  z-index: -1;
+  bottom: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  .ulist {
+    grid-template-columns: 1fr 0.25rem 1fr;
+  }
+  .ulist::before {
+    grid-column: 2;
+  }
+  .ulist li:nth-child(odd) {
+    grid-column: 1;
+  }
+  .ulist li:nth-child(even) {
+    grid-column: 3;
+  }
+
+
+  .ulist li:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  .ulist li:nth-child(odd) .date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  .ulist li:nth-child(odd) .date::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + 2rem + 0.25rem / 2);
+  }
+  .ulist li:nth-child(odd) .date {
+    border-radius: 0 calc(3rem / 2) calc(3rem / 2) 0;
+  }
+}
+
+.credits {
+  margin-top: 1rem;
+  text-align: right;
+}
+.credits a {
+  color: rgba(30, 30, 30);
+}
+
+
+/* Important Date END */
+

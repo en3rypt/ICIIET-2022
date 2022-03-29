@@ -5,13 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <!-- CSS files -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/96744a5ccd.js" crossorigin="anonymous"></script>
 
-  <title>ICIIET 2022</title>
+  <title>ICIIET - 2022</title>
 </head>
 
 <body>
@@ -77,14 +86,26 @@
           <li class="nav-item">
             <a class="underline link-effect nav-link  text-white" aria-current="page" href="#home">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="underline link-effect nav-link text-white" href="#committe">Committe</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white underline link-effect" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Committee
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#organizing-committee">organizing Committee</a></li>
+              <li><a class="dropdown-item" href="#advisory-committee">Advisory Committee</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="underline link-effect nav-link text-white" href="#speaker">Speakers</a>
           </li>
-          <li class="nav-item">
-            <a class="underline link-effect nav-link text-white" href="#">Call for Paper</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white underline link-effect" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Call for Paper
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#author-guidelines">Author Guidelines</a></li>
+              <li><a class="dropdown-item" href="#">Tracks</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="underline link-effect nav-link text-white" href="#registration">Registration</a>
@@ -225,7 +246,33 @@
   </div>
 
 
-  <div class="orgCommittee">
+  <div class="important-dates py-5">
+    <h3 class="fw-bold text-center text-red pb-4">IMPORTANT DATES</h3>
+    <ul class="ulist">
+        <li class="litem" style="--accent-color:#41516C">
+            <div class="date">30 JUNE 2022</div>
+            <div class="descr">Last date for paper submission</div>
+        </li>
+        <li style="--accent-color:#FBCA3E">
+            <div class="date">10 AUGUST 2022</div>
+            <div class="descr">Notification of paper acceptance</div>
+        </li>
+        <li style="--accent-color:#E24A68">
+            <div class="date">20 AUGUST 2022</div>
+            <div class="descr">Camera ready paper submission</div>
+        </li>
+        <li style="--accent-color:#1B5F8C">
+            <div class="date">20 AUGUST 2022</div>
+            <div class="descr">Last date of early bird registration</div>
+        </li>
+        <li style="--accent-color:#4CADAD">
+            <div class="date">31 AUGUST 2022</div>
+            <div class="descr">Last Date of Registration</div>
+        </li>
+    </ul>
+  </div> 
+
+  <div class="orgCommittee" id="organizing-committee">
     <h3 class="fw-bold text-center text-blue">ORGANIZING COMMITTEE</h3>
     <div class="d-flex justify-content-center flex-wrap">
       <div class="name-card indiv">
@@ -341,6 +388,206 @@
       </div>
     </div>
   </div>
+  <div class="track-chairs" id="advisory-committee">
+    <div class="track-chairs-flexbox d-flex flex-wrap justify-content-center">
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 1</p>
+          <h4 class="fw-bold">Communication & Networking</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr.G.Uma Maheswari</span><br>
+            Associate Professor, Dept.of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr.R.Venkateswari</span><br>
+            Assistant Professor, Dept.of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 2</p>
+          <h4 class="fw-bold">Signal & Image Processing</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr.A.Kanammal</span><br>
+            Associate Professor, Dept.of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr.K.Thiyagarajan</span><br>
+            Assistant Professor, Dept.of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 3</p>
+          <h4 class="fw-bold">Micro, Nano Electronics & MEMS</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr.G.Srivatsun</span><br>
+            Associate Professor, Dept.of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr.K.Thiyagarajan</span><br>
+            Assistant Professor, Dept.of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr. M.Alagappan</span><br>
+            Assistant Professor, Dept.of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 4</p>
+          <h4 class="fw-bold">High Performance Computing & Information Security</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr. G.R.Karpagam</span><br>
+            Professor, Dept. of CSE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr.K.Rajalakshmi</span><br>
+            Associate Professor, Dept.of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 5</p>
+          <h4 class="fw-bold">Robotics & Automation</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr. M.Sundaram</span><br>
+            Associate Professor, Dept. of EEE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr.D.Sivaraj</span><br>
+            Assistant Professor, Dept.of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 6</p>
+          <h4 class="fw-bold">Energy & Power Systems</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr. T.Bogaraj</span><br>
+            Professor, Dept. of EEE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr. S.Hemachitra</span><br>
+            Associate Professor, Dept.of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 7</p>
+          <h4 class="fw-bold">Electric Drives & Controls</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr. L.Ashok Kumar</span><br>
+            Professor, Dept. of EEE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr. K.Vasanthamani</span><br>
+            Assistant Professor, Dept.of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 8</p>
+          <h4 class="fw-bold">Medical Electronics & Healthcare Technologies</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr. B.Banu Rekha</span><br>
+            Associate Professor, Dept. of BME, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr. A.Uma</span><br>
+            Assistant Professor, Dept. of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 9</p>
+          <h4 class="fw-bold">Mechanical Systems & Design</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr.M.Yuvaraja</span><br>
+            Associate Professor, Dept. of Mech. Engg, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr. M.Santhanalakshmi</span><br>
+            Assistant Professor, Dept.of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="heading">
+          <p class="fw-bold">TRACK 10</p>
+          <h4 class="fw-bold">Materials & Manufacturing</h4>
+        </div>
+        <div class="chairs" data-aos="">
+          <p>
+            <span class="fw-bold">Dr.G.Madhan Mohan</span><br>
+            Professor, Dept. of Prod. Engg, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr.L.Thulasimani</span><br>
+            Assistant Professor, Dept. of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+      <div class="card virtual-platform" style="width: 860px;">
+        <div class="heading">
+          <h4 class="fw-bold">Virtual Platform chair</h4>
+        </div>
+        <div class="chairs d-flex justify-content-around flex-wrap" data-aos="">
+          <p>
+            <span class="fw-bold">Dr.P.Kalpana</span><br>
+            Professor, Dept.of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Ms. S.Radharani</span><br>
+            Assistant professor, Dept. of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr. S. Rakesh Sharma</span><br>
+            Assistant professor, Dept. of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Ms. P.Prabhavathi</span><br>
+            Assistant Professor, Dept. of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr. S.Nandhini</span><br>
+            Assistant professor, Dept. of ECE, PSGCT
+          </p>
+          <p>
+            <span class="fw-bold">Dr. T.Sridarshini</span><br>
+            Assistant Professor, Dept. of ECE, PSGCT
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div class="speaker" id="speaker">
     <h3 class="fw-bold text-center text-blue">KEYNOTE SPEAKERS</h3>
@@ -404,7 +651,23 @@
     </div>
   </div>
 
+  <div class="authorguideline" id="author-guidelines">
+    <h3 class="fw-bold text-center">AUTHOR GUIDELINES</h3>
+    <div class="content">
+     <ul>
+       <li data-aos="fade-up" duration="500">ICIIET 2022 invites full length original research contributions from engineering professionals from industries, R&D organizations, academic institutions, government departments and research scholars from across the world.</li>
+       <li data-aos="fade-up" duration="1000">Full length original research contributions and review articles not exceeding six pages as per the IEEE double column format shall be submitted.</li>
+       <li data-aos="fade-up" duration="1500">The manuscript should contribute original research ideas, developmental ideas, analysis, findings, results, etc.</li>
+       <li data-aos="fade-up" duration="2000">The manuscript should not have been published in any journals/magazines or conference proceedings and not under review in any of them.</li>
+       <li data-aos="fade-up" duration="2500">Further the manuscript should contain the name of the corresponding author with e-mail id and affiliation of all author</li>
+       <li data-aos="fade-up" duration="3000">Soft copy of the full length manuscripts (in .doc and .pdf) shall be submitted to iciiet2022@gmail.com.</li>
+       <li data-aos="fade-up" duration="3500">All the submitted manuscripts will be sent for peer review and the corresponding author will be notified the outcome of the review process.</li>
+       <li data-aos="fade-up" duration="4000">If reviewers recommended for further improvements in the manuscript, the manuscript will be sent back to the corresponding author and the revised version of the manuscript shall be submitted within fifteen days on the date of notification. </li>
 
+     </ul>
+     </div>
+     <div class="overlay position-absolute top-0 start-0 bottom-0 end-0 "></div>
+  </div>
 
 
   <!-- #registration -->
@@ -510,7 +773,6 @@
   </section>
 
 
-
   <footer class="container-fluid foot" id="contact">
     <div class="up">
       <p class="foot-heading">Department of Electronics and Communication Engineering</p>
@@ -532,6 +794,7 @@
           <img src="images/phone-solid-24 1.png" class="img-1">
           Telephone
         </p>
+
         <p class="long-text">
           +919843969627/ +919443118710
           <br>
