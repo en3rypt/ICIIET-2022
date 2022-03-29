@@ -387,7 +387,7 @@ img {
   height: 100vh;
 }
 
-
+/*  */
 .landing-content {
   background: url(../images/maskedBridge1.svg) no-repeat center center;
   background-size: cover;
@@ -415,7 +415,6 @@ img {
   z-index: 1;
 }
 
-
 .latest-updates {
   z-index: 10;
   position: absolute;
@@ -430,7 +429,6 @@ img {
   color: white;
 }
 
-
 .latest-updates h2 {
   letter-spacing: 0.2rem;
   color: #fec913;
@@ -440,30 +438,64 @@ img {
   background-color: rgba(8, 36, 101, 1);
 }
 
+@media (max-width: 768px) {
+  .landing-overlay {
+    display: none;
+  }
+  .latest-updates {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    height: 80%;
+  }
+
+  .latest-updates h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .landing-overlay {
+    display: none;
+  }
+  .latest-updates {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    height: 80%;
+  }
+
+  .latest-updates h2 {
+    text-align: center;
+  }
+}
+
 .article-date {
-    opacity: 0.6;
+  opacity: 0.6;
   font-size: 0.75rem;
   font-weight: thin;
   font-style: italic;
 }
 
-.empty-div{
-    min-height: 22rem;
+.empty-div {
+  min-height: 22rem;
 }
 
 .article-container {
-
   padding-bottom: 1rem;
   overflow-y: auto;
   max-height: 18rem;
   z-index: 1020;
-
 }
 
 .article-container::-webkit-scrollbar {
-    width: 0px; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
-  }
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
 
 .news {
   font-size: 0.8rem;
@@ -472,6 +504,7 @@ img {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 
+/*  */
 
 .orgCommittee {
   border-radius: 5px;
