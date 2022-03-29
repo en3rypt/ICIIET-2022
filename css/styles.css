@@ -277,6 +277,7 @@ img {
 
 /* FOOTER CSS END */
 
+
 .abtCollege-content p {
   text-align: justify;
   color: #e2e2e2;
@@ -387,6 +388,8 @@ img {
   width: 100%;
   height: 100vh;
 }
+
+
 .landing-content {
   background: url(../images/maskedBridge1.svg) no-repeat center center;
   background-size: cover;
@@ -414,6 +417,7 @@ img {
   z-index: 1;
 }
 
+
 .latest-updates {
   z-index: 10;
   position: absolute;
@@ -438,7 +442,7 @@ img {
   background-color: rgba(8, 36, 101, 1);
 }
 
-.date {
+.article-date {
     opacity: 0.6;
   font-size: 0.75rem;
   font-weight: thin;
@@ -466,6 +470,7 @@ img {
   padding: 0.5rem 0;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
+
 
 .orgCommittee {
   border-radius: 5px;
@@ -878,4 +883,172 @@ border-radius: 8px;
 
 
 /* Authour Guide lines END */
+
+
+/* Important Date Start */
+.important-dates{
+  padding:6rem 0;
+}
+.ulist {
+  display: grid;
+  grid-template-columns: 0.25rem 1fr;
+  grid-auto-columns: max-content;
+  column-gap: 2rem;
+  list-style: none;
+  width: min(60rem, 90%);
+  margin-inline: auto;
+}
+
+.ulist::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(0.25rem / 2);
+}
+
+
+.ulist li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+
+.ulist li {
+  grid-column: 2;
+  margin-inline: 1.5rem;
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+
+.ulist li .date {
+  height: 3rem;
+  margin-inline: calc(1.5rem * -1);
+
+  text-align: center;
+  background-color: var(--accent-color);
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  border-radius: calc(3rem / 2) 0 0 calc(3rem / 2);
+}
+
+
+.ulist li .date::before {
+  content: "";
+  width: 1.5rem;
+  aspect-ratio: 1;
+  background: var(--accent-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+}
+
+.ulist li .date::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  background: rgba(245, 245, 245);
+  border: 0.3rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+  right: calc(100% + 2rem + 0.25rem / 2);
+}
+
+.ulist li .title,
+.ulist li .descr {
+  background: rgba(245, 245, 245);
+  position: relative;
+  padding-inline: 1.5rem;
+}
+.ulist li .title {
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-weight: 500;
+}
+.ulist li .descr {
+  padding-top:5%;
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+
+.ulist li .title::before,
+.ulist li .descr::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(4px);
+  transform: translate(-50%, 50%);
+}
+.ulist li .title::before {
+  bottom: calc(100% + 0.125rem);
+}
+
+.ulist li .descr::before {
+  z-index: -1;
+  bottom: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  .ulist {
+    grid-template-columns: 1fr 0.25rem 1fr;
+  }
+  .ulist::before {
+    grid-column: 2;
+  }
+  .ulist li:nth-child(odd) {
+    grid-column: 1;
+  }
+  .ulist li:nth-child(even) {
+    grid-column: 3;
+  }
+
+
+  .ulist li:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  .ulist li:nth-child(odd) .date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  .ulist li:nth-child(odd) .date::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + 2rem + 0.25rem / 2);
+  }
+  .ulist li:nth-child(odd) .date {
+    border-radius: 0 calc(3rem / 2) calc(3rem / 2) 0;
+  }
+}
+
+.credits {
+  margin-top: 1rem;
+  text-align: right;
+}
+.credits a {
+  color: rgba(30, 30, 30);
+}
+
+
+/* Important Date END */
 
