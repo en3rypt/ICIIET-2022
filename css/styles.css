@@ -277,6 +277,7 @@ img {
 
 /* FOOTER CSS END */
 
+
 .abtCollege-content p {
   text-align: justify;
   color: #e2e2e2;
@@ -387,6 +388,8 @@ img {
   width: 100%;
   height: 100vh;
 }
+
+
 .landing-content {
   background: url(../images/maskedBridge1.svg) no-repeat center center;
   background-size: cover;
@@ -414,6 +417,7 @@ img {
   z-index: 1;
 }
 
+
 .latest-updates {
   z-index: 10;
   position: absolute;
@@ -438,7 +442,7 @@ img {
   background-color: rgba(8, 36, 101, 1);
 }
 
-.date {
+.article-date {
     opacity: 0.6;
   font-size: 0.75rem;
   font-weight: thin;
@@ -466,6 +470,7 @@ img {
   padding: 0.5rem 0;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
+
 
 .orgCommittee {
   border-radius: 5px;
@@ -881,11 +886,9 @@ border-radius: 8px;
 
 
 /* Important Date Start */
-
-h1 {
-  text-align: center;
+.important-dates{
+  padding:6rem 0;
 }
-
 .ulist {
   display: grid;
   grid-template-columns: 0.25rem 1fr;
@@ -1046,9 +1049,6 @@ h1 {
   color: rgba(30, 30, 30);
 }
 
-/* .important-dates{
-  position: relative;
-  z-index: 2000;
-} */
+
 /* Important Date END */
 
