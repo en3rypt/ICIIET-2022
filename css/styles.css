@@ -689,7 +689,8 @@ img {
 }
 
 .reg-ps {
-  opacity: 0.8;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 1080px) {
