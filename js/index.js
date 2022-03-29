@@ -1,7 +1,4 @@
-// $("#scroller").simplyScroll({
-//     speed: 1,
-//     orientation: 'vertical',
-//   });
+
 
 
 // var waitTime = 100;
