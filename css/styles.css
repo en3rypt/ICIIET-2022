@@ -848,8 +848,8 @@ img {
 
 
 .track-chairs .card .heading{
-  background: rgb(241,38,38);
-background: -moz-linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
+  background: #f12626;
+background: -moz-linear-gradient(149deg, #f12626 0%, rgba(118,0,92,1) 100%);
 background: -webkit-linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
 background: linear-gradient(149deg, rgba(241,38,38,1) 0%, rgba(118,0,92,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f12626",endColorstr="#76005c",GradientType=1);
@@ -1082,3 +1082,23 @@ border-radius: 8px;
 
 /* Important Date END */
 
+.accordionExample{
+  
+  width: 100%;
+  /* align-items: center; */
+  
+}
+.accordionExample h3{
+  /* font-size:1.2rem; */
+  padding:2%;
+  /* text-align: center; */
+  background-color:#d33a3a;
+  margin: 0;
+  color: #ffffff;
+}
+.accordion-header h3{
+  font-size:1.3rem;
+}
+.accordata{
+  background-color: grey;
+}
