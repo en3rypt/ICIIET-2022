@@ -482,9 +482,9 @@ img {
 }
 
 .article-container {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   overflow-y: auto;
-  max-height: 14rem;
+  max-height: 18rem;
   z-index: 1020;
 }
 
