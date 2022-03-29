@@ -676,10 +676,10 @@ img {
 
 .fee-amt {
   color: #fec913;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
-.fee-amt:hover {
+.fee-cell:hover .fee-amt {
   padding: 0 1rem;
   font-weight: bold;
   cursor: pointer;
