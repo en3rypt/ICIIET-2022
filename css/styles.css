@@ -153,15 +153,13 @@ body {
 
 /* FOOTER CSS */
 
-
-.foot
-{
-    font-family: 'Roboto', sans-serif;
-    margin-left: -1%;
-    margin-bottom: -2%;
-    width:auto;
-    background-color: #082465;
-    color: white;
+.foot {
+  font-family: "Roboto", sans-serif;
+  margin-left: -1%;
+  margin-bottom: -2%;
+  width: auto;
+  background-color: #082465;
+  color: white;
 }
 .foot-heading {
   margin-bottom: 1cm;
@@ -391,7 +389,7 @@ img {
   background-size: cover;
   background-color: white;
   width: 100%;
-  height: 37rem;
+  height: 32.56rem;
   position: relative;
 }
 
@@ -417,9 +415,9 @@ img {
   z-index: 10;
   position: absolute;
   top: 3.5rem;
-  right: 4%; /* modifier for the left-right positioning of the latest-updates div. */
-  height: 30rem;
-  width: 28rem;
+  right: 8%; /* modifier for the left-right positioning of the latest-updates div. */
+  height: 24rem;
+  width: 24rem;
   padding: 2rem;
   padding-top: 0;
   background-color: rgba(8, 36, 101, 1);
@@ -430,7 +428,7 @@ img {
 .latest-updates h2 {
   letter-spacing: 0.2rem;
   color: #fec913;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 800;
   padding: 2rem 1rem 1rem 0;
   background-color: rgba(8, 36, 101, 1);
@@ -486,7 +484,7 @@ img {
 .article-container {
   padding-bottom: 2rem;
   overflow-y: auto;
-  max-height: 22rem;
+  max-height: 14rem;
   z-index: 1020;
 }
 
@@ -496,6 +494,7 @@ img {
 }
 
 .news {
+  font-size: 0.8rem;
   letter-spacing: 0.5px;
   padding: 0.5rem 0;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
@@ -509,7 +508,6 @@ img {
   text-align: center;
 }
 
-
 .orgCommittee h1 {
   font-size: 2.2rem;
   color: #082465;
@@ -517,8 +515,7 @@ img {
   padding: 34px;
 }
 
-
-.name-card{
+.name-card {
   border-radius: 10px;
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -535,8 +532,7 @@ img {
   width: 1200px;
 }
 
-
-.name-card h4{
+.name-card h4 {
   display: inline-block;
   position: relative;
   font-size: 1.2em;
@@ -551,8 +547,7 @@ img {
   margin: 10px 5px 20px 5px;
 }
 
-
-.name-card h4::before{
+.name-card h4::before {
   position: absolute;
   content: "";
   background-color: #f05858;
@@ -563,13 +558,12 @@ img {
   transform: scaleX(0);
   visibility: hidden;
 
-  transition: all .2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
-.name-card:hover.name-card h4:before{
+.name-card:hover.name-card h4:before {
   transform: scaleX(1);
   visibility: visible;
 }
-
 
 .name-card:hover {
   transform: translateY(-3px);
@@ -740,29 +734,28 @@ img {
   }
 }
 
-.name-card:hover{
+.name-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288)
+  box-shadow: 0 2px 6px rgba(224, 182, 182, 0.288);
 }
-
 
 /* keynote speakers start */
 
-.speaker{
+.speaker {
   background-color: #f05858;
   color: white;
   padding: 10px 0 20px;
 }
 
-.speaker h3{
+.speaker h3 {
   color: white;
   margin: 3em 0 1.5em 0;
 }
-.speakers-flexbox{
+.speakers-flexbox {
   padding: 40px 0 20px;
 }
 
-.speaker .card{
+.speaker .card {
   background-color: #d33a3a;
   width: 300px;
   text-align: center;
@@ -771,21 +764,19 @@ img {
   margin: 3em 20px;
 }
 
-.speaker .card h4{
+.speaker .card h4 {
   font-size: 1.1em;
 }
 
-.speaker .card img{
+.speaker .card img {
   width: 150px;
   border-radius: 50%;
   margin: -5em auto auto auto;
   border: 10px solid #d33a3a;
 }
 
-.speaker .card .subtle{
+.speaker .card .subtle {
   color: rgba(255, 255, 255, 0.726);
 }
 
 /* keynote speakers end */
-
-
