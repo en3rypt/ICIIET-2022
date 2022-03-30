@@ -93,7 +93,7 @@ body {
 .ieee-logo {
   width: 9rem;
 }
-.ieee-clg-logo{
+.ieee-clg-logo {
   width: 4.5rem;
   /* padding-top: 1.5em; */
   padding-bottom: 0;
@@ -647,10 +647,9 @@ img {
   padding: 3.5rem;
 }
 
-.reg-point {
-  padding: 1rem;
-  padding-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+.reg-point-list {
+  width: 80%;
+  margin: auto;
 }
 
 .regform-dwld {
@@ -738,11 +737,11 @@ img {
 .fee-amt {
   color: #fec913;
   transition: all 0.25s ease-in-out;
+  font-weight: bold;
 }
 
 .fee-cell:hover .fee-amt {
   padding: 0 1rem;
-  font-weight: bold;
   cursor: pointer;
   background-color: #fec913;
   border-radius: 10px;
