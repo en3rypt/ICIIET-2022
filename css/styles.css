@@ -91,9 +91,13 @@ body {
   padding-right: 2rem;
 }
 .ieee-logo {
-  width: 7.375rem;
+  width: 9rem;
 }
-
+.ieee-clg-logo{
+  width: 4.5rem;
+  /* padding-top: 1.5em; */
+  padding-bottom: 0;
+}
 .f-40 {
   font-size: 1.5rem;
 }
