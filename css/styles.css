@@ -575,6 +575,7 @@ img {
   transform: translateY(-3px);
   box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
 }
+
 .advisory-chair {
   padding: 45px;
   background: -moz-linear-gradient(
@@ -1091,6 +1092,7 @@ img {
   padding: 10rem 0;
 }
 
+
 /*track topics*/
 .track-topics {
   display: flex;
@@ -1191,3 +1193,4 @@ img {
 .d-class {
   background-color: #062e8a;
 }
+
