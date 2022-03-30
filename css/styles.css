@@ -231,6 +231,7 @@ img {
   transform: translateY(3px);
 }
 .bottom-foot {
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -254,11 +255,18 @@ img {
     height: auto;
   }
   .right {
-    padding-left: 3rem;
-    padding-right: 0rem;
-    float: left;
-    text-align: left;
+    padding-left: 2rem;
+    display: block;
+    float:center;
+    align-content: center;
+    width:100%;
   }
+  .iframe
+  {
+    display: block;
+    align-self: center;
+  }
+
   .right1 {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -273,6 +281,22 @@ img {
   }
 }
 
+@media only screen and (max-width: 290px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .right
+  {
+    padding-left:0rem;
+    margin: 0;
+  }
+  .iframe
+  {
+    height : 270px;
+    width :270px;
+  }
+}
 /* FOOTER CSS END */
 
 .abtCollege-content p {
