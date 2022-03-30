@@ -281,7 +281,7 @@ img {
   color: #e2e2e2;
 }
 
-.abtConference {
+.abtConCare {
   position: relative;
   color: white;
   background: url("../images/conference.jpg");
@@ -290,21 +290,21 @@ img {
   padding: 10%;
 }
 
-.abtConference .overlay {
+.abtConCare .overlay {
   z-index: -1;
   background-color: rgba(197, 0, 0, 0.829);
 }
 
-.abtConference h1 {
+.abtConCare h1 {
   font-size: 2.2rem;
 }
 
-.abtConference .content {
+/* .abtConference .content {
   padding-top: 5%;
   font-size: 1.2rem;
   line-height: 1.5em;
   text-align: justify;
-}
+} */
 
 .abtDepartment-content {
   height: 100%;
@@ -1101,4 +1101,7 @@ border-radius: 8px;
 }
 .accordata{
   background-color: grey;
+}
+.psgCare{
+  margin-left: 1px slid white solid;
 }
