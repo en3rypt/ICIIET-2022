@@ -523,10 +523,10 @@ img {
 .name-card {
   border-radius: 10px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #082465;
   padding: 20px 20px;
   margin: 25px 25px;
-  color: grey;
+  color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s;
 }
 
@@ -538,14 +538,15 @@ img {
 }
 
 .name-card h4 {
+  color: #f05858;
   display: inline-block;
   position: relative;
   font-size: 1.2em;
 }
 .name-card span {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
 }
 .name-card.categ p {
   width: 200px;
@@ -710,7 +711,7 @@ img {
 .fee-cell {
   width: 80%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   padding-top: 1rem;
 }
@@ -724,7 +725,7 @@ img {
 }
 
 .fee-cell {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -798,13 +799,13 @@ img {
 /* keynote speakers start */
 
 .speaker {
-  background-color: #f05858;
+  /* background-color: #f05858; */
   color: white;
   padding: 10px 0 20px;
 }
 
 .speaker h3 {
-  color: white;
+
   margin: 3em 0 1.5em 0;
 }
 .speakers-flexbox {
@@ -1164,19 +1165,12 @@ img {
   width: 100%;
   /* align-items: center; */
 }
-.accordionExample h3 {
-  /* font-size:1.2rem; */
-  padding: 2%;
-  /* text-align: center; */
-  background-color: #d33a3a;
-  margin: 0;
-  color: #ffffff;
-}
+
 .accordion-header h3 {
   font-size: 1.3rem;
 }
 .accordata {
-  background-color: grey;
+  background-color: rgb(219, 238, 245);
 }
 
 #tracksMobile {
