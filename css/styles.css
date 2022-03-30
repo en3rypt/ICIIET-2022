@@ -1086,17 +1086,17 @@ img {
 /* Important Date END */
 
 /* Sponsors */
-.s-slider{
+.s-slider {
   padding: 10rem 0;
 }
 
 /*track topics*/
-.track-topics{
+.track-topics {
   display: flex;
   margin: 45px auto;
   width: 80%;
 }
-.track-links{
+.track-links {
   /* position: absolute;
   top: 10px;
   left: 10px; 
@@ -1107,38 +1107,38 @@ img {
   border-radius: 10px;
 }
 
-.track-links ul{
+.track-links ul {
   padding: 0;
   text-align: center;
   margin: 0 auto;
   list-style: none;
 }
 
-.track-links li{
+.track-links li {
   border-radius: 5px;
   padding: 7px;
   margin: 10px 15px 10px 5px;
   transition: background-color 0.1s ease-in;
 }
 
-.track-links li:hover{
+.track-links li:hover {
   background-color: #062e8a;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.205);
 }
 
-.track-links a{
+.track-links a {
   display: block;
   font-size: 1.1rem;
   text-decoration: none;
   color: white;
 }
 
-.track-links a:hover{
+.track-links a:hover {
   text-decoration: none;
   color: white;
 }
 
-.track-topics .carousel{
+.track-topics .carousel {
   background-color: rgb(219, 238, 245);
   border-radius: 0 5px 5px 0;
   width: 100%;
@@ -1146,16 +1146,54 @@ img {
   margin-left: -10px;
 }
 
-.track-topics .carousel-item{
+.track-topics .carousel-item {
   font-size: 1.1rem;
   line-height: 1;
   height: 600px;
 }
 
-.track-topics .carousel h2{
+.track-topics .carousel h2 {
   font-size: 1.2rem;
   margin: 10px 0;
   font-weight: bold;
   color: #082465;
 }
 /*track topics end*/
+
+.accordionExample {
+  width: 100%;
+  /* align-items: center; */
+}
+.accordionExample h3 {
+  /* font-size:1.2rem; */
+  padding: 2%;
+  /* text-align: center; */
+  background-color: #d33a3a;
+  margin: 0;
+  color: #ffffff;
+}
+.accordion-header h3 {
+  font-size: 1.3rem;
+}
+.accordata {
+  background-color: grey;
+}
+
+#tracksMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .track-topics {
+    display: none;
+  }
+  #tracksMobile {
+    display: block;
+  }
+}
+
+/* dropdoiwn class */
+
+.d-class {
+  background-color: #062e8a;
+}
