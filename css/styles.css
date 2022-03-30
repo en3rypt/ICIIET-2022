@@ -418,7 +418,7 @@ img {
   z-index: 10;
   position: absolute;
   top: 3.5rem;
-  right: 8%; /* modifier for the left-right positioning of the latest-updates div. */
+  right: 4%; /* modifier for the left-right positioning of the latest-updates div. */
   height: 24rem;
   width: 24rem;
   padding: 2rem;
@@ -806,7 +806,6 @@ img {
 }
 
 .speaker h3 {
-
   margin: 3em 0 1.5em 0;
 }
 .speakers-flexbox {
@@ -1092,11 +1091,10 @@ img {
   padding: 10rem 0;
 }
 
-
 /*track topics*/
 
-.callForPaper-text{
-  color:#082465;
+.callForPaper-text {
+  color: #082465;
 }
 .track-topics {
   display: flex;
@@ -1197,4 +1195,3 @@ img {
 .d-class {
   background-color: #062e8a;
 }
-
