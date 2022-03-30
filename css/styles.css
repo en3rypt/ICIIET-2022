@@ -400,6 +400,16 @@ img {
   position: relative;
 }
 
+.isbn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.isbn h2 {
+  font-size: 1.2rem;
+  color: #082465;
+}
+
 @media (max-width: 575px) {
   .landing-content {
     /* background: url(../images/landingPage1.jpeg); */
