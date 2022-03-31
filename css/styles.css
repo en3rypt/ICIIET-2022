@@ -448,14 +448,19 @@ img {
   position: relative;
 }
 
+
+/* added background here */
 .isbn {
   position: absolute;
-  top: 2%;
-  left: 2%;
+  padding: 10px 40px 10px 10px;
+  background-color: #fec913;
+  border-radius: 0 0 60px 0;
 }
+
 .isbn h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* changed font size */
   color: #082465;
+  font-weight: 600;
 }
 
 @media (max-width: 575px) {
@@ -1159,7 +1164,7 @@ img {
 }
 
 /*track topics*/
-
+/* made few changes here to hightlight selected track */
 .callForPaper-text {
   color: #082465;
 }
