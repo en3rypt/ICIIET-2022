@@ -91,9 +91,13 @@ body {
   padding-right: 2rem;
 }
 .ieee-logo {
-  width: 7.375rem;
+  width: 9rem;
 }
-
+.ieee-clg-logo {
+  width: 4.5rem;
+  /* padding-top: 1.5em; */
+  padding-bottom: 0;
+}
 .f-40 {
   font-size: 1.5rem;
 }
@@ -231,6 +235,7 @@ img {
   transform: translateY(3px);
 }
 .bottom-foot {
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -254,11 +259,18 @@ img {
     height: auto;
   }
   .right {
-    padding-left: 3rem;
-    padding-right: 0rem;
-    float: left;
-    text-align: left;
+    padding-left: 2rem;
+    display: block;
+    float:center;
+    align-content: center;
+    width:100%;
   }
+  .iframe
+  {
+    display: block;
+    align-self: center;
+  }
+
   .right1 {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -273,6 +285,22 @@ img {
   }
 }
 
+@media only screen and (max-width: 290px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .right
+  {
+    padding-left:0rem;
+    margin: 0;
+  }
+  .iframe
+  {
+    height : 270px;
+    width :270px;
+  }
+}
 /* FOOTER CSS END */
 
 .abtCollege-content p {
@@ -280,31 +308,55 @@ img {
   color: #e2e2e2;
 }
 
-.abtConference {
+/* about conf STARTS */
+
+.abtConCare {
   position: relative;
   color: white;
   background: url("../images/conference.jpg");
   background-size: cover;
   z-index: -2;
-  padding: 10%;
+  padding: 5%;
+  width: 100%;
+  margin: 0;
+  text-align: justify;
 }
 
-.abtConference .overlay {
+.abtConCare .overlay {
   z-index: -1;
   background-color: rgba(197, 0, 0, 0.829);
 }
 
-.abtConference h1 {
+.abtConCare h1 {
   font-size: 2.2rem;
 }
 
-.abtConference .content {
-  padding-top: 5%;
-  font-size: 1.2rem;
-  line-height: 1.5em;
-  text-align: justify;
+.psgCare {
+  border-left: 1px solid white;
+  padding-left: 5%;
+  margin: 0;
 }
 
+.abtConf {
+  margin: 0;
+  padding-right: 5%;
+}
+
+@media (max-width:991px) {
+  .psgCare {
+    border-left: 0;
+    border-top: 1px solid white;
+    padding-left: 0;
+    padding-top: 5%;
+  }
+
+  .abtConf {
+    padding-bottom: 5%;
+  }
+}
+
+
+/* About Conf ends */
 .abtDepartment-content {
   height: 100%;
   z-index: 1;
@@ -396,6 +448,21 @@ img {
   position: relative;
 }
 
+
+/* added background here */
+.isbn {
+  position: absolute;
+  padding: 10px 40px 10px 10px;
+  background-color: #fec913;
+  border-radius: 0 0 60px 0;
+}
+
+.isbn h2 {
+  font-size: 1.1rem; /* changed font size */
+  color: #082465;
+  font-weight: 600;
+}
+
 @media (max-width: 575px) {
   .landing-content {
     /* background: url(../images/landingPage1.jpeg); */
@@ -418,7 +485,7 @@ img {
   z-index: 10;
   position: absolute;
   top: 3.5rem;
-  right: 8%; /* modifier for the left-right positioning of the latest-updates div. */
+  right: 4%; /* modifier for the left-right positioning of the latest-updates div. */
   height: 24rem;
   width: 24rem;
   padding: 2rem;
@@ -520,6 +587,130 @@ img {
   padding: 34px;
 }
 
+.advCommittee {
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #082465;
+  padding: 45px;
+  text-align: center;
+}
+
+.advCommittee h3 {
+  color: #fec913;
+  font-weight: bolder;
+}
+
+.advCommittee .name-card {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px 20px;
+  margin: 25px 25px;
+  color: #081e65af;
+  transition: all 0.3s;
+}
+
+.advCommittee .name-card.indiv {
+  width: 400px;
+}
+.advCommittee .name-card.categ {
+  width: 1200px;
+}
+
+.advCommittee .name-card span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #082465;
+}
+.advCommittee .name-card.categ p {
+  width: 250px;
+  margin: 10px 5px 20px 5px;
+}
+
+.advCommittee .name-card:hover.name-card h4:before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.advCommittee .name-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
+}
+/* End of advCommittee */
+
+.techProgCommittee {
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 45px;
+  text-align: center;
+}
+
+.techProgCommittee h1 {
+  font-size: 2.2rem;
+  color: #082465;
+  font-weight: bolder;
+  padding: 34px;
+}
+
+.techProgCommittee .name-card {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #082465;
+  padding: 20px 20px;
+  margin: 25px 25px;
+  color: rgba(255,255,255,0.8);
+  transition: all 0.3s;
+}
+
+.techProgCommittee .name-card.indiv {
+  width: 400px;
+}
+.techProgCommittee .name-card.categ {
+  width: 1200px;
+}
+
+.techProgCommittee .name-card h4 {
+  color: #f05858;
+  display: inline-block;
+  position: relative;
+  margin: 1rem;
+  font-size: 1.2em;
+}
+.techProgCommittee .name-card span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+.techProgCommittee .name-card.categ p {
+  width: 250px;
+  margin: 10px 5px 20px 5px;
+}
+
+.techProgCommittee .name-card h4::before {
+  position: absolute;
+  content: "";
+  background-color: #f05858;
+  height: 2px;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  visibility: hidden;
+
+  transition: all 0.2s ease-in-out 0s;
+}
+.techProgCommittee .name-card:hover.name-card h4:before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.techProgCommittee .name-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
+}
+/* End of TechProgCommittee */
+
 .name-card {
   border-radius: 10px;
   text-align: center;
@@ -538,9 +729,10 @@ img {
 }
 
 .name-card h4 {
-  color: #f05858;
+  color: #fec913;
   display: inline-block;
   position: relative;
+  margin: 1rem;
   font-size: 1.2em;
 }
 .name-card span {
@@ -549,14 +741,14 @@ img {
   color: white;
 }
 .name-card.categ p {
-  width: 200px;
+  width: 250px;
   margin: 10px 5px 20px 5px;
 }
 
 .name-card h4::before {
   position: absolute;
   content: "";
-  background-color: #f05858;
+  background-color: #fec913;
   height: 2px;
   width: 100%;
   bottom: -3px;
@@ -643,10 +835,9 @@ img {
   padding: 3.5rem;
 }
 
-.reg-point {
-  padding: 1rem;
-  padding-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+.reg-point-list {
+  width: 80%;
+  margin: auto;
 }
 
 .regform-dwld {
@@ -734,11 +925,11 @@ img {
 .fee-amt {
   color: #fec913;
   transition: all 0.25s ease-in-out;
+  font-weight: bold;
 }
 
 .fee-cell:hover .fee-amt {
   padding: 0 1rem;
-  font-weight: bold;
   cursor: pointer;
   background-color: #fec913;
   border-radius: 10px;
@@ -806,7 +997,6 @@ img {
 }
 
 .speaker h3 {
-
   margin: 3em 0 1.5em 0;
 }
 .speakers-flexbox {
@@ -816,6 +1006,12 @@ img {
 .speaker .card {
   background-color: #d33a3a;
   width: 300px;
+
+
+   height: 400px;
+  /* to be removed after adding content */
+
+
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -1092,8 +1288,11 @@ img {
   padding: 10rem 0;
 }
 
-
 /*track topics*/
+/* made few changes here to hightlight selected track */
+.callForPaper-text {
+  color: #082465;
+}
 .track-topics {
   display: flex;
   margin: 45px auto;
@@ -1119,26 +1318,38 @@ img {
 
 .track-links li {
   border-radius: 5px;
-  padding: 7px;
+  padding:0;
   margin: 10px 15px 10px 5px;
   transition: background-color 0.1s ease-in;
 }
 
-.track-links li:hover {
-  background-color: #062e8a;
+.track-links li:hover{
+  background-color: #0b3db3;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.205);
 }
 
+
+
 .track-links a {
   display: block;
+  border-radius: 5px;
+  margin: 0;
+  padding: 7px;
   font-size: 1.1rem;
   text-decoration: none;
   color: white;
 }
 
-.track-links a:hover {
+.track-links a:hover{
   text-decoration: none;
   color: white;
+}
+
+.track-links a:focus{
+  text-decoration: none;
+  color: white;
+  background-color: #0b3db3;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.205);
 }
 
 .track-topics .carousel {
@@ -1193,4 +1404,3 @@ img {
 .d-class {
   background-color: #062e8a;
 }
-
