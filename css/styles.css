@@ -587,6 +587,9 @@ img {
   padding: 34px;
 }
 
+
+/* advCommittee is the styling given to advisory, technical program and student committees */
+
 .advCommittee {
   border-radius: 5px;
   margin: 0 auto;
@@ -1380,7 +1383,7 @@ img {
 }
 
 .accordion-header h3 {
-  font-size: 1.3rem;
+  font-size: 1.1em;
 }
 .accordata {
   background-color: rgb(219, 238, 245);
