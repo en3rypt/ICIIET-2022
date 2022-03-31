@@ -1188,26 +1188,38 @@ img {
 
 .track-links li {
   border-radius: 5px;
-  padding: 7px;
+  padding:0;
   margin: 10px 15px 10px 5px;
   transition: background-color 0.1s ease-in;
 }
 
-.track-links li:hover {
-  background-color: #062e8a;
+.track-links li:hover{
+  background-color: #0b3db3;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.205);
 }
 
+
+
 .track-links a {
   display: block;
+  border-radius: 5px;
+  margin: 0;
+  padding: 7px;
   font-size: 1.1rem;
   text-decoration: none;
   color: white;
 }
 
-.track-links a:hover {
+.track-links a:hover{
   text-decoration: none;
   color: white;
+}
+
+.track-links a:focus{
+  text-decoration: none;
+  color: white;
+  background-color: #0b3db3;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.205);
 }
 
 .track-topics .carousel {
