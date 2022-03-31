@@ -93,7 +93,7 @@ body {
 .ieee-logo {
   width: 9rem;
 }
-.ieee-clg-logo{
+.ieee-clg-logo {
   width: 4.5rem;
   /* padding-top: 1.5em; */
   padding-bottom: 0;
@@ -235,6 +235,7 @@ img {
   transform: translateY(3px);
 }
 .bottom-foot {
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -258,11 +259,18 @@ img {
     height: auto;
   }
   .right {
-    padding-left: 3rem;
-    padding-right: 0rem;
-    float: left;
-    text-align: left;
+    padding-left: 2rem;
+    display: block;
+    float:center;
+    align-content: center;
+    width:100%;
   }
+  .iframe
+  {
+    display: block;
+    align-self: center;
+  }
+
   .right1 {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -277,6 +285,22 @@ img {
   }
 }
 
+@media only screen and (max-width: 290px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .right
+  {
+    padding-left:0rem;
+    margin: 0;
+  }
+  .iframe
+  {
+    height : 270px;
+    width :270px;
+  }
+}
 /* FOOTER CSS END */
 
 .abtCollege-content p {
@@ -284,31 +308,55 @@ img {
   color: #e2e2e2;
 }
 
-.abtConference {
+/* about conf STARTS */
+
+.abtConCare {
   position: relative;
   color: white;
   background: url("../images/conference.jpg");
   background-size: cover;
   z-index: -2;
-  padding: 10%;
+  padding: 5%;
+  width: 100%;
+  margin: 0;
+  text-align: justify;
 }
 
-.abtConference .overlay {
+.abtConCare .overlay {
   z-index: -1;
   background-color: rgba(197, 0, 0, 0.829);
 }
 
-.abtConference h1 {
+.abtConCare h1 {
   font-size: 2.2rem;
 }
 
-.abtConference .content {
-  padding-top: 5%;
-  font-size: 1.2rem;
-  line-height: 1.5em;
-  text-align: justify;
+.psgCare {
+  border-left: 1px solid white;
+  padding-left: 5%;
+  margin: 0;
 }
 
+.abtConf {
+  margin: 0;
+  padding-right: 5%;
+}
+
+@media (max-width:991px) {
+  .psgCare {
+    border-left: 0;
+    border-top: 1px solid white;
+    padding-left: 0;
+    padding-top: 5%;
+  }
+
+  .abtConf {
+    padding-bottom: 5%;
+  }
+}
+
+
+/* About Conf ends */
 .abtDepartment-content {
   height: 100%;
   z-index: 1;
@@ -398,6 +446,16 @@ img {
   width: 100%;
   height: 32.56rem;
   position: relative;
+}
+
+.isbn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.isbn h2 {
+  font-size: 1.2rem;
+  color: #082465;
 }
 
 @media (max-width: 575px) {
@@ -647,10 +705,9 @@ img {
   padding: 3.5rem;
 }
 
-.reg-point {
-  padding: 1rem;
-  padding-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+.reg-point-list {
+  width: 80%;
+  margin: auto;
 }
 
 .regform-dwld {
@@ -738,11 +795,11 @@ img {
 .fee-amt {
   color: #fec913;
   transition: all 0.25s ease-in-out;
+  font-weight: bold;
 }
 
 .fee-cell:hover .fee-amt {
   padding: 0 1rem;
-  font-weight: bold;
   cursor: pointer;
   background-color: #fec913;
   border-radius: 10px;
