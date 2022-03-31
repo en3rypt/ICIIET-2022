@@ -297,7 +297,29 @@ img {
 }
 
 /* FOOTER CSS END */
+.care-read-more {
+  position: absolute;
+  border: 1px solid;
+  color: white;
+  padding: 5px 26px;
+  border-radius: 5px;
+  text-decoration: none;
 
+
+}
+
+
+
+.care-read-more:link,
+.care-read-more:visited {
+  color: white;
+}
+
+.care-read-more:hover {
+  background-color: rgba(230, 36, 36, 0.829);
+  color: rgb(247, 247, 247);
+  border-color: rgba(199, 0, 0, 0.827);
+}
 
 .abtCollege-content p {
   text-align: justify;
@@ -305,21 +327,18 @@ img {
 }
 
 .abtConCare {
-  position: relative;
+
   color: white;
-  background: url("../images/conference.jpg");
+  background: url("../images/confcare.png");
   background-size: cover;
-  z-index: -2;
+
   padding: 5%;
   width: 100%;
   margin: 0;
   text-align: justify;
 }
 
-.abtConCare .overlay {
-  z-index: -1;
-  background-color: rgba(197, 0, 0, 0.829);
-}
+
 
 .abtConCare h1 {
   font-size: 2.2rem;
@@ -329,12 +348,15 @@ img {
   border-left: 1px solid white;
   padding-left: 5%;
   margin: 0;
+  padding-bottom: 5%;
 }
 
 .abtConf {
   margin: 0;
   padding-right: 5%;
 }
+
+
 
 @media (max-width:991px) {
   .psgCare {
