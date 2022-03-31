@@ -524,7 +524,7 @@ img {
   .latest-updates {
     position: absolute;
     width: 80%;
-    top: 10%;
+    top: 16%;
     right: 10%;
     bottom: 10%;
     height: 80%;
@@ -542,7 +542,7 @@ img {
   .latest-updates {
     position: absolute;
     width: 80%;
-    top: 10%;
+    top: 16%;
     right: 10%;
     bottom: 10%;
     height: 80%;
@@ -639,7 +639,7 @@ img {
   color: #082465;
 }
 .advCommittee .name-card.categ p {
-  width: 250px;
+  width: 200px;
   margin: 10px 5px 20px 5px;
 }
 
@@ -699,7 +699,7 @@ img {
   color: white;
 }
 .techProgCommittee .name-card.categ p {
-  width: 250px;
+  width: 200px;
   margin: 10px 5px 20px 5px;
 }
 
