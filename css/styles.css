@@ -582,6 +582,130 @@ img {
   padding: 34px;
 }
 
+.advCommittee {
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #082465;
+  padding: 45px;
+  text-align: center;
+}
+
+.advCommittee h3 {
+  color: #fec913;
+  font-weight: bolder;
+}
+
+.advCommittee .name-card {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px 20px;
+  margin: 25px 25px;
+  color: #081e65af;
+  transition: all 0.3s;
+}
+
+.advCommittee .name-card.indiv {
+  width: 400px;
+}
+.advCommittee .name-card.categ {
+  width: 1200px;
+}
+
+.advCommittee .name-card span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #082465;
+}
+.advCommittee .name-card.categ p {
+  width: 250px;
+  margin: 10px 5px 20px 5px;
+}
+
+.advCommittee .name-card:hover.name-card h4:before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.advCommittee .name-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
+}
+/* End of advCommittee */
+
+.techProgCommittee {
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 45px;
+  text-align: center;
+}
+
+.techProgCommittee h1 {
+  font-size: 2.2rem;
+  color: #082465;
+  font-weight: bolder;
+  padding: 34px;
+}
+
+.techProgCommittee .name-card {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #082465;
+  padding: 20px 20px;
+  margin: 25px 25px;
+  color: rgba(255,255,255,0.8);
+  transition: all 0.3s;
+}
+
+.techProgCommittee .name-card.indiv {
+  width: 400px;
+}
+.techProgCommittee .name-card.categ {
+  width: 1200px;
+}
+
+.techProgCommittee .name-card h4 {
+  color: #f05858;
+  display: inline-block;
+  position: relative;
+  margin: 1rem;
+  font-size: 1.2em;
+}
+.techProgCommittee .name-card span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+.techProgCommittee .name-card.categ p {
+  width: 250px;
+  margin: 10px 5px 20px 5px;
+}
+
+.techProgCommittee .name-card h4::before {
+  position: absolute;
+  content: "";
+  background-color: #f05858;
+  height: 2px;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  visibility: hidden;
+
+  transition: all 0.2s ease-in-out 0s;
+}
+.techProgCommittee .name-card:hover.name-card h4:before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.techProgCommittee .name-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
+}
+/* End of TechProgCommittee */
+
 .name-card {
   border-radius: 10px;
   text-align: center;
@@ -600,9 +724,10 @@ img {
 }
 
 .name-card h4 {
-  color: #f05858;
+  color: #fec913;
   display: inline-block;
   position: relative;
+  margin: 1rem;
   font-size: 1.2em;
 }
 .name-card span {
@@ -618,7 +743,7 @@ img {
 .name-card h4::before {
   position: absolute;
   content: "";
-  background-color: #f05858;
+  background-color: #fec913;
   height: 2px;
   width: 100%;
   bottom: -3px;
