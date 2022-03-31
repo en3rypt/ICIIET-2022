@@ -876,6 +876,12 @@ img {
 .speaker .card {
   background-color: #d33a3a;
   width: 300px;
+
+
+   height: 400px;
+  /* to be removed after adding content */
+
+
   text-align: center;
   padding: 10px;
   border-radius: 10px;
