@@ -627,7 +627,7 @@ img {
 }
 
 
-/* advCommittee is the styling given to advisory, technical program and student committees */
+/* advCommittee */
 
 .advCommittee {
 
@@ -751,6 +751,56 @@ img {
   box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
 }
 /* End of TechProgCommittee */
+/* Start of StudCommittee */
+.studCommittee {
+
+  margin: 0 auto;
+  background-color: #082465;
+  padding: 45px;
+  text-align: center;
+}
+
+.studCommittee h3,h5 {
+  color: #fec913;
+}
+
+.studCommittee .name-card {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px 20px;
+  margin: 25px 25px;
+  color: #081e65af;
+  transition: all 0.3s;
+}
+
+.studCommittee .name-card.indiv {
+  width: 400px;
+}
+.studCommittee .name-card.categ {
+  width: 1200px;
+}
+
+.studCommittee .name-card span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #082465;
+}
+.studCommittee .name-card.categ p {
+  max-width: 250px;
+  margin: 10px 5px 20px 5px;
+}
+
+.studCommittee .name-card:hover.name-card h4:before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.studCommittee .name-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
+}
+/* End of studCommittee */
 
 .name-card {
   border-radius: 10px;
