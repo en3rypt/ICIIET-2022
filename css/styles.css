@@ -642,15 +642,18 @@ img {
 /* advCommittee */
 
 .advCommittee {
-
   margin: 0 auto;
-  background-color: #082465;
+  background: rgb(174,202,214);
+  background: -moz-linear-gradient(90deg, rgba(174,202,214,1) 0%, rgba(184,211,254,0.6337885495995272) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(174,202,214,1) 0%, rgba(184,211,254,0.6337885495995272) 100%);
+  background: linear-gradient(90deg, rgba(174,202,214,1) 0%, rgba(184,211,254,0.6337885495995272) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aecad6",endColorstr="#b8d3fe",GradientType=1);
   padding: 45px;
   text-align: center;
 }
 
 .advCommittee h3,h5 {
-  color: #fec913;
+  color: #082465;
 }
 
 .advCommittee .name-card {
@@ -684,10 +687,10 @@ img {
   transform: scaleX(1);
   visibility: visible;
 }
-
-.advCommittee .name-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1px 6px rgba(224, 182, 182, 0.288);
+/* Removed hover psuedo but still translates on hover :| */
+.advCommittee .name-card {
+  /* transform: translateY(-3px); */
+  box-shadow: 0 5px 8px rgba(224, 182, 182, 0.388);
 }
 /* End of advCommittee */
 
