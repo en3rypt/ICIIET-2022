@@ -59,6 +59,18 @@ body {
 }
 
 /* new css */
+/* horizontal scroll header */
+.ticker {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+.news1 {
+  color:white;
+  width: 100%;
+}
+/* scroll end */
 
 .text-red {
   color: #f05858;
