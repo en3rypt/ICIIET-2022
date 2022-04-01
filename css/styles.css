@@ -639,7 +639,7 @@ img {
   color: #082465;
 }
 .advCommittee .name-card.categ p {
-  width: 200px;
+  max-width: 250px;
   margin: 10px 5px 20px 5px;
 }
 
@@ -854,6 +854,7 @@ img {
 .reg-point-list {
   width: 80%;
   margin: auto;
+  text-align: start;
 }
 
 .regform-dwld {
