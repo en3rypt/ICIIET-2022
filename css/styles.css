@@ -323,22 +323,45 @@ img {
 
 /* about conf STARTS */
 
-.abtConCare {
-  position: relative;
+.care-read-more{
+  border: 1px solid;
   color: white;
-  background: url("../images/conference.jpg");
+  padding: 5px 26px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+.care-read-more:hover {
+  background-color: #082465;
+  border-color: #082465;
+  color:white;  
+  
+}
+
+
+.abtCollege-content p {
+  text-align: justify;
+  color: #e2e2e2;
+}
+
+.abtConCare {
+
+  color: white;
+  background: url("../images/confcare.png");
   background-size: cover;
-  z-index: -2;
+
   padding: 5%;
   width: 100%;
   margin: 0;
   text-align: justify;
 }
 
-.abtConCare .overlay {
-  z-index: -1;
-  background-color: rgba(197, 0, 0, 0.829);
-}
+
 
 .abtConCare h1 {
   font-size: 2.2rem;
@@ -348,12 +371,15 @@ img {
   border-left: 1px solid white;
   padding-left: 5%;
   margin: 0;
+  padding-bottom: 5%;
 }
 
 .abtConf {
   margin: 0;
   padding-right: 5%;
 }
+
+
 
 @media (max-width:991px) {
   .psgCare {
@@ -524,7 +550,7 @@ img {
   .latest-updates {
     position: absolute;
     width: 80%;
-    top: 10%;
+    top: 16%;
     right: 10%;
     bottom: 10%;
     height: 80%;
@@ -542,7 +568,7 @@ img {
   .latest-updates {
     position: absolute;
     width: 80%;
-    top: 10%;
+    top: 16%;
     right: 10%;
     bottom: 10%;
     height: 80%;
@@ -600,17 +626,19 @@ img {
   padding: 34px;
 }
 
+
+/* advCommittee is the styling given to advisory, technical program and student committees */
+
 .advCommittee {
-  border-radius: 5px;
+
   margin: 0 auto;
   background-color: #082465;
   padding: 45px;
   text-align: center;
 }
 
-.advCommittee h3 {
+.advCommittee h3,h5 {
   color: #fec913;
-  font-weight: bolder;
 }
 
 .advCommittee .name-card {
@@ -636,7 +664,7 @@ img {
   color: #082465;
 }
 .advCommittee .name-card.categ p {
-  width: 250px;
+  max-width: 250px;
   margin: 10px 5px 20px 5px;
 }
 
@@ -696,7 +724,7 @@ img {
   color: white;
 }
 .techProgCommittee .name-card.categ p {
-  width: 250px;
+  width: 200px;
   margin: 10px 5px 20px 5px;
 }
 
@@ -851,6 +879,7 @@ img {
 .reg-point-list {
   width: 80%;
   margin: auto;
+  text-align: start;
 }
 
 .regform-dwld {
@@ -1293,6 +1322,14 @@ img {
 .credits a {
   color: rgba(30, 30, 30);
 }
+@media screen and (max-width: 40rem) {
+  .lead {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+  
+
 
 /* Important Date END */
 
@@ -1393,7 +1430,7 @@ img {
 }
 
 .accordion-header h3 {
-  font-size: 1.3rem;
+  font-size: 1.1em;
 }
 .accordata {
   background-color: rgb(219, 238, 245);
