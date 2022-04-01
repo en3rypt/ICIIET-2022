@@ -1296,6 +1296,14 @@ img {
 .credits a {
   color: rgba(30, 30, 30);
 }
+@media screen and (max-width: 40rem) {
+  .lead {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+  
+
 
 /* Important Date END */
 
