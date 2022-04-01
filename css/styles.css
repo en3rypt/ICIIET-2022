@@ -637,9 +637,8 @@ img {
   text-align: center;
 }
 
-.advCommittee h3 {
+.advCommittee h3,h5 {
   color: #fec913;
-  font-weight: bolder;
 }
 
 .advCommittee .name-card {
