@@ -1,4 +1,4 @@
-$('#track-links').focus();
+// $('#track-links').focus();
 
 $(document).ready(function(){
     $('.customer-logos').slick({
