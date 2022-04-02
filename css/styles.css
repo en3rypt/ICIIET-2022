@@ -1190,6 +1190,7 @@ background-image: linear-gradient(315deg, #0cbaba 0%, #5b0358 74%);
   border-radius: 8px;
   margin-top: -1em;
   z-index: 99;
+  transition: all 0.3s ease-in-out;
 }
 
 .prog-chairs .card .chairs p{
