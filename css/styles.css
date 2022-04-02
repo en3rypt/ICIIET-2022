@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -40,25 +39,6 @@ body {
   }
 }
 
-.sticky-div {
-  transition: all;
-  transition-duration: 0.2s;
-}
-
-.glass {
-  background: rgba(31, 38, 135, 1);
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 5.5px );
-    -webkit-backdrop-filter: blur( 5.5px ); */
-}
-
-@media (max-width: 992px) {
-  .bg-color {
-    background-color: rgba(31, 38, 135, 1);
-  }
-}
-
-/* new css */
 /* horizontal scroll header */
 .ticker {
   display: flex;
@@ -107,7 +87,6 @@ body {
 }
 .ieee-clg-logo {
   width: 4.5rem;
-  /* padding-top: 1.5em; */
   padding-bottom: 0;
 }
 .f-40 {
@@ -269,6 +248,7 @@ img {
   font-size: 40px;
   line-height: 0.8;
 }
+
 @media only screen and (max-width: 420px) {
   body {
     margin: 0;
@@ -342,25 +322,16 @@ img {
   border-radius: 5px;
   text-decoration: none;
 }
-
-
-
-
-
-
 .care-read-more:hover {
   background-color: #082465;
   border-color: #082465;
   color:white;  
   
 }
-
-
 .abtCollege-content p {
   text-align: justify;
   color: #e2e2e2;
 }
-
 .abtConCare {
 
   color: white;
@@ -372,27 +343,19 @@ img {
   margin: 0;
   text-align: justify;
 }
-
-
-
 .abtConCare h1 {
   font-size: 2.2rem;
 }
-
 .psgCare {
   border-left: 1px solid white;
   padding-left: 5%;
   margin: 0;
   padding-bottom: 5%;
 }
-
 .abtConf {
   margin: 0;
   padding-right: 5%;
 }
-
-
-
 @media (max-width:991px) {
   .psgCare {
     border-left: 0;
@@ -405,7 +368,6 @@ img {
     padding-bottom: 5%;
   }
 }
-
 
 /* About Conf ends */
 .abtDepartment-content {
@@ -483,13 +445,7 @@ img {
     width: 100%;
   }
 }
-/* del */
-.dummy {
-  width: 100%;
-  height: 100vh;
-}
 
-/*  */
 .landing-content {
   background: url(../images/maskedBridge1.svg) no-repeat center center;
   background-size: cover;
@@ -499,8 +455,6 @@ img {
   position: relative;
 }
 
-
-/* added background here */
 .isbn {
   position: absolute;
   padding: 10px 40px 10px 10px;
@@ -509,14 +463,13 @@ img {
 }
 
 .isbn h2 {
-  font-size: 1.1rem; /* changed font size */
+  font-size: 1.1rem; 
   color: #082465;
   font-weight: 600;
 }
 
 @media (max-width: 575px) {
   .landing-content {
-    /* background: url(../images/landingPage1.jpeg); */
     margin-top: 1px;
   }
 }
@@ -610,8 +563,8 @@ img {
 }
 
 .article-container::-webkit-scrollbar {
-  width: 0px; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+  width: 0px; 
+  background: transparent; 
 }
 
 .news {
@@ -620,8 +573,6 @@ img {
   padding: 0.5rem 0;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
-
-/*  */
 
 .orgCommittee {
   border-radius: 5px;
@@ -687,9 +638,8 @@ img {
   transform: scaleX(1);
   visibility: visible;
 }
-/* Removed hover psuedo but still translates on hover :| */
+
 .advCommittee .name-card {
-  /* transform: translateY(-3px); */
   box-shadow: 0 5px 8px rgba(224, 182, 182, 0.388);
 }
 /* End of advCommittee */
@@ -712,12 +662,11 @@ img {
 .techProgCommittee .name-card {
   border-radius: 10px;
   text-align: center;
-  /* background-color: #082465; */
   background: rgb(119,75,204);
-background: -moz-linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
-background: -webkit-linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
-background: linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endColorstr="#0f1ba4",GradientType=1);
+  background: -moz-linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
+  background: -webkit-linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
+  background: linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endColorstr="#0f1ba4",GradientType=1);
   padding: 20px 20px;
   margin: 25px 25px;
   color: rgba(255,255,255,0.8);
@@ -758,7 +707,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endCo
   left: 0;
   transform: scaleX(0);
   visibility: hidden;
-
   transition: all 0.2s ease-in-out 0s;
 }
 .techProgCommittee .name-card:hover.name-card h4:before {
@@ -773,7 +721,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endCo
 /* End of TechProgCommittee */
 /* Start of StudCommittee */
 .studCommittee {
-
   margin: 0 auto;
   background-color: #082465;
   padding: 45px;
@@ -859,7 +806,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endCo
 @media screen and (max-width: 576px) {
   .name-card.categ p {
     width: 150px;
-
   }
 }
 
@@ -873,7 +819,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endCo
   left: 0;
   transform: scaleX(0);
   visibility: hidden;
-
   transition: all 0.2s ease-in-out 0s;
 }
 .name-card:hover.name-card h4:before {
@@ -913,7 +858,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endCo
   z-index: 1;
   background-color: #ffffff;
   border-radius: 7px;
-  /* background: radial-gradient(circle at 0 0, transparent 13%, #ffffff calc(13%)) top left, radial-gradient(circle at 100% 0, transparent 13%, #ffffff calc(13%)) top right, radial-gradient(circle at 0 100%, transparent 13%, #ffffff calc(13%)) bottom left, radial-gradient(circle at 100% 100%, transparent 13%, #ffffff calc(13%)) bottom right; */
   width: 500px;
   height: 150px;
   background-repeat: no-repeat;
@@ -1110,7 +1054,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endCo
 /* keynote speakers start */
 
 .speaker {
-  /* background-color: #f05858; */
   color: white;
   padding: 10px 0 20px;
 }
@@ -1125,12 +1068,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endCo
 .speaker .card {
   background-color: #d33a3a;
   width: 300px;
-
-
-   height: 400px;
-  /* to be removed after adding content */
-
-
+  height: 400px;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -1276,7 +1214,6 @@ background-image: linear-gradient(315deg, #0cbaba 0%, #5b0358 74%);
   width: 250px;
 }
 
-/* track chairs
 
 
 /* Author Guide lines */
@@ -1478,7 +1415,7 @@ background-image: linear-gradient(315deg, #0cbaba 0%, #5b0358 74%);
 }
 
 /*track topics*/
-/* made few changes here to hightlight selected track */
+
 .callForPaper-text {
   color: #082465;
 }
@@ -1488,10 +1425,6 @@ background-image: linear-gradient(315deg, #0cbaba 0%, #5b0358 74%);
   width: 80%;
 }
 .track-links {
-  /* position: absolute;
-  top: 10px;
-  left: 10px; 
-  z-index: 99;*/
   padding-top: 12px;
   background-color: #082465;
   width: 200px;
