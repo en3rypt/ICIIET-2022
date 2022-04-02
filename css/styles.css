@@ -1043,7 +1043,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endCo
 
 .fee-amt {
   color: #fec913;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.15s ease-in-out;
   font-weight: bold;
 }
 
