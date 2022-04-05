@@ -500,7 +500,6 @@ img {
 }
 
 .latest-updates h2 {
-  letter-spacing: 0.2rem;
   color: #fec913;
   font-size: 1.25rem;
   font-weight: 800;
@@ -594,11 +593,13 @@ img {
 
 .advCommittee {
   margin: 0 auto;
-  background: rgb(174,202,214);
+  background-color: #d9e4f5;
+background-image: linear-gradient(315deg, #d9e4f5 0%, #e3f4fd 74%);
+  /* background: rgb(174,202,214);
   background: -moz-linear-gradient(90deg, rgba(174,202,214,1) 0%, rgba(184,211,254,0.6337885495995272) 100%);
   background: -webkit-linear-gradient(90deg, rgba(174,202,214,1) 0%, rgba(184,211,254,0.6337885495995272) 100%);
   background: linear-gradient(90deg, rgba(174,202,214,1) 0%, rgba(184,211,254,0.6337885495995272) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aecad6",endColorstr="#b8d3fe",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aecad6",endColorstr="#b8d3fe",GradientType=1); */
   padding: 45px;
   text-align: center;
 }
@@ -610,10 +611,13 @@ img {
 .advCommittee .name-card {
   border-radius: 10px;
   text-align: center;
-  background-color: #f7f7f7;
+  /* background-color: #2166cc; */
+  background-color: #6465af;
+  background-image: linear-gradient(315deg, #6465af 0%, #2c69d1 74%);
   padding: 20px 20px;
   margin: 25px 25px;
-  color: #081e65af;
+  /* color: #081e65af; */
+  color:white;
   transition: all 0.3s;
 }
 
@@ -627,7 +631,7 @@ img {
 .advCommittee .name-card span {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #082465;
+  /* color: #082465; */
 }
 .advCommittee .name-card.categ p {
   max-width: 250px;
@@ -662,11 +666,16 @@ img {
 .techProgCommittee .name-card {
   border-radius: 10px;
   text-align: center;
-  background: rgb(119,75,204);
+  background: #36096d;
+  background: linear-gradient(15deg, #36096d 0%, #119696 80%);
+  background: -moz-linear-gradient(15deg, #36096d 0%, #119696 80%);
+  background: -webkit-linear-gradient(15deg, #36096d 0%, #119696 80%);
+  background: linear-gradient(15deg, #36096d 0%, #119696 80%);
+  /* background: rgb(119,75,204);
   background: -moz-linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
   background: -webkit-linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
   background: linear-gradient(328deg, rgba(119,75,204,1) 0%, rgba(15,27,164,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endColorstr="#0f1ba4",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#774bcc",endColorstr="#0f1ba4",GradientType=1); */
   padding: 20px 20px;
   margin: 25px 25px;
   color: rgba(255,255,255,0.8);
@@ -1485,7 +1494,8 @@ background-image: linear-gradient(315deg, #0cbaba 0%, #5b0358 74%);
 .track-topics .carousel-item {
   font-size: 1.1rem;
   line-height: 1;
-  height: 600px;
+  height: 645px;
+  /* overflow-y: scroll; */ 
 }
 
 .track-topics .carousel h2 {
