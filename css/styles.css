@@ -1258,12 +1258,14 @@ background-image: linear-gradient(315deg, #0cbaba 0%, #5b0358 74%); */
 
 /* Author Guide lines */
 .authorguideline {
-  position: relative;
   color: white;
-  background: url("../images/conference.jpg");
+  background: url("../images/blue_care.png");
   background-size: cover;
-  z-index: -2;
-  padding: 10%;
+
+  padding: 5%;
+  width: 100%;
+  margin: 0;
+  text-align: justify;
 }
 .authorguideline .overlay {
   z-index: -1;
