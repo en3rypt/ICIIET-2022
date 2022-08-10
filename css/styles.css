@@ -1509,7 +1509,7 @@ background-image: linear-gradient(315deg, #0cbaba 0%, #5b0358 74%); */
 .track-topics .carousel-item {
   font-size: 1.1rem;
   line-height: 1;
-  height: 645px;
+  height: 580px;
   /* overflow-y: scroll; */
 }
 
@@ -1585,4 +1585,8 @@ background-image: linear-gradient(315deg, #0cbaba 0%, #5b0358 74%); */
 }
 .ieee:hover {
   color: #bcc7d9;
+}
+
+.ul-tracks {
+  height: 570px;
 }
